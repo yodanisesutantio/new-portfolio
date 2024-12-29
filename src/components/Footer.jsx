@@ -13,6 +13,9 @@ const Footer = () => {
                 <Link to="/about" className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-sm hover:text-[#fffbfc] duration-500 group">About</Link>
             </li>
             <li>
+                <Link to="/projects" className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-sm hover:text-[#fffbfc] duration-500 group">Projects</Link>
+            </li>
+            <li>
                 <Link to="/socials" className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-sm hover:text-[#fffbfc] duration-500 group">Socials</Link>
             </li>
             <li>
