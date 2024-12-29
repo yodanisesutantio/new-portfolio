@@ -25,7 +25,7 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-                <Link to="/resume" className="flex flex-col font-nunito font-semibold text-[#fffbfc]/40 hover:text-[#fffbfc] duration-500 group">
+                <Link to="/resume" className={`flex flex-col font-nunito font-semibold ${location.pathname === '/resume' ? 'text-[#fffbfc]' : 'text-[#fffbfc]/40'} hover:text-[#fffbfc] duration-500 group`}>
                     Resume
                     <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
                 </Link>

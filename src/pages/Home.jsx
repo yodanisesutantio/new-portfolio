@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <section className="pt-6 pb-20 px-32 flex flex-col gap-5 flex-grow items-center justify-center">
+    <section className="pt-6 pb-16 px-32 flex flex-col gap-5 flex-grow items-center justify-center">
         <h1 className="text-7xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
             I do Design during the <span className="text-[#fffbfc] animate-changeColorDay">Day</span>, then Code at <span className="text-[#fffbfc] animate-changeColorNight">Night</span>
         </h1>
