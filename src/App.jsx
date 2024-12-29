@@ -9,7 +9,7 @@ const App = () => {
 
         <section className="pt-6 pb-24 px-32 flex flex-col gap-5 flex-grow items-center justify-center">
           <h1 className="text-7xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
-            I do Design during the <span className="text-[#CAFE48]">Day</span>, then Code at <span className="text-[#57467B]">Night</span>
+            I do Design during the <span className="text-[#fffbfc] animate-changeColorDay">Day</span>, then Code at <span className="text-[#fffbfc] animate-changeColorNight">Night</span>
           </h1>
 
           <div className="font-nunito font-normal text-lg text-[#fffbfc]/85 text-center leading-tight">
