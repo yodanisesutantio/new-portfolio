@@ -4,3 +4,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to your CSS file if you're not using Tailwind CSS */
+/* a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+a span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.5s ease;
+}
+
+a:hover span {
+    transform: translateX(0);
+} */

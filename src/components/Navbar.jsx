@@ -12,13 +12,13 @@ const Navbar = () => {
 
         <ul className="flex space-x-12">
             <li>
-                <Link to="/about" className="font-nunito text-[#fffbfc]/40">About</Link>
+                <Link to="/about" className="font-nunito text-[#fffbfc]/40 hover:text-[#fffbfc] duration-500">About</Link>
             </li>
             <li>
-                <Link to="/socials" className="font-nunito text-[#fffbfc]/40">Socials</Link>
+                <Link to="/socials" className="font-nunito text-[#fffbfc]/40 hover:text-[#fffbfc] duration-500">Socials</Link>
             </li>
             <li>
-                <Link to="/resume" className="font-nunito text-[#fffbfc]/40">Resume</Link>
+                <Link to="/resume" className="font-nunito text-[#fffbfc]/40 hover:text-[#fffbfc] duration-500">Resume</Link>
             </li>
         </ul>
     </nav>
