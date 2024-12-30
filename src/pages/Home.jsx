@@ -7,7 +7,7 @@ const Home = () => {
             I do Design during the <span className="text-[#fffbfc] animate-changeColorDay">Day</span>, then Code at <span className="text-[#fffbfc] animate-changeColorNight">Night</span>
         </h1>
 
-        <div className="font-nunito font-normal text-lg text-[#fffbfc]/85 text-center leading-tight">
+        <div className="font-nunito font-light text-lg text-[#fffbfc]/75 text-center leading-tight">
             <p>Hi, I'm Yodanis, an IT Enthusiast with a diverse skill set.</p>
             <p>Currently working on to figure out what to do in the tech world 🤭</p>
         </div>
