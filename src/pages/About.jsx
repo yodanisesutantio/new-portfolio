@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="py-6 px-32 flex flex-col gap-5 items-center justify-center">
+    <section className="py-6 px-32 flex flex-col flex-grow gap-5 items-center justify-center">
       <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">Hi, it's me!</h1>
 
       <div className="w-full grid grid-cols-3 gap-6">
@@ -25,8 +25,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <h1 className="mt-16 text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">What I really want to do?</h1>
     </section>
   )
 }
