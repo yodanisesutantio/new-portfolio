@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center px-32 py-6 border-b border-[#fffbfc]/10">
         <div className="flex items-center">
             <Link to="/">
-                <img src="/img/yodanisesutantio_logomark.png" alt="Yodanis E. Sutantio | Home" className="h-10" />
+                <img src="/img/yodanisesutantio_logomark.png" alt="Yodanis E. Sutantio | Home" className="h-10 rounded-lg hover:shadow-xl hover:shadow-[#fffbfc]/15 duration-500" />
             </Link>
         </div>
 
