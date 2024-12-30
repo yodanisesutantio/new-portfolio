@@ -1,4 +1,5 @@
 import React from 'react'
+import Quotes from '../components/Quotes'
 
 const Home = () => {
   return (
@@ -171,15 +172,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 gap-16 items-center w-full">
+        <div className="mt-20 grid grid-cols-2 gap-16 items-start w-full">
           <div className="flex flex-col">
-            <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] leading-snug">Quotes of Today</h1>
+            <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] leading-snug">Quotes for Today</h1>
             <p className="mt-2 font-nunito font-light text-base text-[#fffbfc]/75 leading-tight">It means a lot that you took the time to explore my portfolio. As a small token of appreciation, here’s a quote to brighten your day</p>
           </div>
 
-          <div className="rounded bg-[#fffbfc] p-8">
-            
-          </div>
+          <Quotes />
         </div>
     </section>
   )
