@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react'
-import Quotes from '../components/Quotes'
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Quotes from '../components/Quotes';
 
 const Home = () => {
   const pRefs = useRef([]);
   const [lineHeights, setLineHeights] = useState([]);
 
   useEffect(() => {
-    const heights = pRefs.current.map((p) => (p ? p.offsetHeight * 1.4 : 0)); // Calculate 120% height
+    const heights = pRefs.current.map((p) => (p ? p.offsetHeight * 1.3 : 0)); // Calculate 120% height
     setLineHeights(heights);
   }, []);
 
@@ -58,9 +59,9 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">July, 2002</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
               {/* Vertical Lines */}
-              <div className="absolute border-l border-r border-[#fffbfc]/30" style={{ height: `${lineHeights[0] || 0}px` }}></div>
+              <div className="absolute border-l border-r border-[#555253]" style={{ height: `${lineHeights[0] || 0}px` }}></div>
             </div>
           </div>
 
@@ -75,8 +76,8 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">January, 2007</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30" style={{ height: `${lineHeights[1] || 0}px` }}></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#555253]" style={{ height: `${lineHeights[1] || 0}px` }}></div>
             </div>
           </div>
 
@@ -91,8 +92,8 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">August, 2014</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30" style={{ height: `${lineHeights[2] || 0}px` }}></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#555253]" style={{ height: `${lineHeights[2] || 0}px` }}></div>
             </div>
           </div>
 
@@ -107,13 +108,17 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">July, 2017</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30"></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#555253]" style={{ height: `${lineHeights[3] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[3] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Marked the start of an unforgettable chapter—my high school years. These three years were filled with friendships that blossomed into lifelong connections. At first, I took the same approach as junior high, diving into various activities and organizations. But by my second year, I shifted gears to focus on my major, Multimedia.
+
+            <br /> <br />
+              
+            This is where I honed my video production skills and eventually stumbled upon something that truly clicked—UI/UX Design. It felt like finding a path that combined creativity, functionality, and problem-solving, and I’ve been captivated ever since.</p>
           </div>
         </div>
 
@@ -123,13 +128,17 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">September, 2020</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30"></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#555253]" style={{ height: `${lineHeights[4] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[4] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">September 2020 was a defining moment, even though the world had been shaken by the pandemic. I refused to let it stop me from moving forward. It was my first year as a college student, pursuing Information Systems, and it became the year I dove headfirst into the world of UI/UX Design. 
+              
+            <br /> <br />  
+              
+            I also immersed myself in IT Controls and Management through an internship at the Offices of Cooperative and Small Medium Enterprises of East Java, pushing through the challenges. And, in this time of disruption, I discovered Web Development—a whole new realm that expanded my horizons even further. This journey was proof that no matter what the world throws at you, there’s always room to grow, adapt, and keep moving forward.</p>
           </div>
         </div>
 
@@ -139,13 +148,13 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">December, 2024</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30"></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#555253]" style={{ height: `${lineHeights[5] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[5] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">It marked the conclusion of my educational journey as I submitted my final assignment—a web-based app for a driving school built using the incremental model. It was a project that tested my skills and creativity, for more details on this project, feel free to check out my <Link to="/projects" className="underline hover:no-underline font-semibold">Projects</Link> page. However, despite reaching this milestone, I still find myself exploring and questioning what I truly want to pursue next. And that’s the beauty of this journey—it doesn’t have a clear ending. The path keeps unfolding, and I’m excited to continue exploring where it leads me.</p>
           </div>
         </div>
 
@@ -155,13 +164,13 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">Today</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-l border-r border-dashed h-[240%] border-[#fffbfc]/30"></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute border-l border-r border-dashed h-[240%] border-[#555253]" style={{ height: `${lineHeights[6] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[6] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">As I stand at this point in my journey, I’m open to any opportunities and offers that come my way, excited to explore new paths and challenges. There’s one particular dream on my bucket list though—working in Germany. The idea of gaining experience in a new culture and environment, while further growing my skills, is something I’m truly passionate about. But for now, I remain open to where the next step will take me, knowing that the journey is far from over.</p>
           </div>
         </div>
 
@@ -171,13 +180,13 @@ const Home = () => {
               <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">May, 2025</h2>
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
-              <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute hidden border-l border-r h-[240%] border-[#fffbfc]/30"></div>
+              <div className="rounded-full w-6 h-6 bg-[#fffbfc] z-20"></div>
+              <div className="absolute hidden border-l border-r h-[240%] border-[#555253]" style={{ height: `${lineHeights[7] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[7] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">I’ll finally earn my degree and be able to proudly call myself Yodanis E. Sutantio, B.Tech. It’s a moment of accomplishment and a reminder that the journey has been worth every step. But as much as it’s a conclusion to my academic chapter, it’s also the beginning of what’s next. I’m ready to see where this newfound title and all the experiences I've gained will take me.</p>
           </div>
         </div>
 
