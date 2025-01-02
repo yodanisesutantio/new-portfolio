@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="rounded col-span-2 flex flex-col gap-6 justify-between bg-[#fffbfc]/5 p-4">
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-[#fffbfc]/85">Hello! I’m Yodanis, born and raised in Surabaya, where I’m actively working and exploring the tech world. I’m navigating the boundless opportunities in this field, still figuring out my path. Some days I feel like a curious explorer; other days, I’m just hitting random buttons to see what works!</p>
+            <p className="font-nunito font-light text-base text-[#fffbfc]/85">Hello! I’m Yodanis, a curious explorer of the tech world. I’m navigating the boundless opportunities in this field, still figuring out my path. Some days I feel like a curious explorer; other days, I’m just hitting random buttons to see what works!</p>
 
             <p className="font-nunito font-light text-base text-[#fffbfc]/85">I’ve always been inspired by a quote from Arthur Schopenhauer: </p>
 

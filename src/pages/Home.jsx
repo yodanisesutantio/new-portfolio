@@ -46,7 +46,7 @@ const Home = () => {
         <p className="mt-2 w-96 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight">Come along as I share the steps that brought me here, one chapter at a time.</p>
 
         <div className="relative flex flex-col gap-6 justify-center items-center mt-8">
-          <div className="absolute top-2 transform border-x border-[#555253] h-[92%]"></div>
+          <div className="absolute top-2 transform bg-gradient-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
 
           <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
             {/* Date */}
@@ -60,8 +60,10 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">I was born in July 2002, a curious child eager to explore the world around me.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -77,8 +79,10 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">I moved from Surabaya to the neighboring town of Sidoarjo. I didn’t fully understand my feelings about the change, but I learned to adapt and make do with my new surroundings.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -94,8 +98,10 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">It marked the start of my junior high years, where I joined multiple organizations and discovered what felt like my first passion—video production.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -111,8 +117,10 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">My high school years began in July 2017. By my second year, I focused on my Multimedia major, sharpening my video production skills and discovering my passion for UI/UX Design.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -128,10 +136,14 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">Despite the global pandemic, September 2020 marked the start of my college journey as an Information Systems student.</p>
 
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
+
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">I honed my UI/UX knowledge and, along the way, stumbled upon Web Development—a discovery that opened up exciting new possibilities.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -147,9 +159,14 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">This marked the end of my educational journey with the submission of my final assignment—a web-based app for a driving school using the incremental model.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
+
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">You can find more details on this project on my <Link to='/projects' className='underline hover:no-underline font-semibold'>Projects</Link> page. While this was a milestone, my journey is far from over, as I continue exploring what’s next.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -165,8 +182,10 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">As of today, I’m open to new opportunities and challenges, with a dream of working abroad—perhaps Germany? The chance to grow my skills while exploring new cultures excites me, and I’m ready for whatever comes next.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
 
@@ -182,8 +201,10 @@ const Home = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-3">
               <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">I’ll be attending my graduation and officially earning my bachelor’s degree. It’s a proud milestone that closes one chapter while opening doors to new adventures.</p>
+
+              <img src="https://picsum.photos/700/500" alt="Placeholder" className="pr-24 object-cover object-center" />
             </div>
           </div>
         </div>
