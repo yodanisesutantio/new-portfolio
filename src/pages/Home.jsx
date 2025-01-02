@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Quotes from '../components/Quotes'
 
 const Home = () => {
+  const pRefs = useRef([]);
+  const [lineHeights, setLineHeights] = useState([]);
+
+  useEffect(() => {
+    const heights = pRefs.current.map((p) => (p ? p.offsetHeight * 1.4 : 0)); // Calculate 120% height
+    setLineHeights(heights);
+  }, []);
+
   return (
     <section className="pt-10 pb-16 px-32 flex flex-col flex-grow items-center justify-center">
         <h1 className="text-7xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
@@ -51,12 +59,13 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              {/* Vertical Lines */}
+              <div className="absolute border-l border-r border-[#fffbfc]/30" style={{ height: `${lineHeights[0] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[0] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">This is where it all started—July 2002, in the vibrant city of Surabaya. I made my debut into the world, tiny and curious about everything (or at least that’s how I imagine it). Since then, life has been a constant journey of learning, growing, and figuring things out. While I wasn’t solving puzzles back then, I like to think that this was the first milestone in a story that’s still being written.</p>
           </div>
         </div>
 
@@ -67,12 +76,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30" style={{ height: `${lineHeights[1] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[1] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Change came knocking in January 2007 when I left Surabaya, the city of my earliest memories, and moved to the neighboring town of Sidoarjo. At that age, I didn’t quite know how to process the shift—it was just something that happened. A new house, new surroundings, and eventually, new experiences. Looking back, it feels like the first lesson in adapting to life’s twists and turns, even when you don’t fully understand them.</p>
           </div>
         </div>
 
@@ -83,12 +92,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30" style={{ height: `${lineHeights[2] || 0}px` }}></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p ref={(el) => (pRefs.current[2] = el)} className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">At the beginning of my junior high school journey, I threw myself into a whirlwind of activities—joining organizations, experimenting with extracurriculars, and even dabbling in video production. Each experience taught me something new, whether it was teamwork, creativity, or just discovering what I enjoyed. It was a vibrant chapter that sparked my curiosity and gave me a glimpse of the things I could be passionate about.</p>
           </div>
         </div>
 
@@ -99,12 +108,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30"></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
           </div>
         </div>
 
@@ -115,12 +124,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30"></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
           </div>
         </div>
 
@@ -131,12 +140,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute border-l border-r h-[240%] border-[#fffbfc]/30"></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
           </div>
         </div>
 
@@ -147,12 +156,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute border-r-2 border-dashed h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute border-l border-r border-dashed h-[240%] border-[#fffbfc]/30"></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
           </div>
         </div>
 
@@ -163,12 +172,12 @@ const Home = () => {
             </div>
             <div className="p-3 w-[10%] flex flex-col items-center relative">
               <div className="rounded-full w-6 h-6 bg-[#fffbfc]"></div>
-              <div className="absolute hidden border-r-2 h-[240%] border-[#fffbfc]/30 transform translate-x-1/2"></div>
+              <div className="absolute hidden border-l border-r h-[240%] border-[#fffbfc]/30"></div>
             </div>
           </div>
 
           <div className="col-span-3 flex flex-row gap-2 p-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-tight pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
+            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pr-24">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nam, ut recusandae eos exercitationem, ad commodi, cupiditate vitae vero aspernatur fugit fuga quos corporis doloremque a soluta voluptates nisi eum.</p>
           </div>
         </div>
 
