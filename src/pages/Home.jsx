@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className="flex flex-row gap-6 items-center justify-center mt-6">
             <button className="font-nunito font-medium text-lg text-[#fffbfc]/30 px-10 py-5 hover:bg-[#fffbfc]/5 duration-500">Connect with me</button>
-            <a href="/projects" className="relative font-nunito font-extrabold text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] px-10 py-5 duration-500">View Projects</a>
+            <Link to="/projects" className="relative font-nunito font-extrabold text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] px-10 py-5 duration-500">View Projects</Link>
         </div>
 
         <h1 className="mt-24 text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">What I really want to do?</h1>
@@ -25,8 +25,8 @@ const Home = () => {
         <div className="mt-8 w-full grid grid-cols-2 gap-4">
           <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/uid.jpeg')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
             <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur-sm duration-500">
-              <div className="w-full h-full flex flex-col gap-2 justify-end transition-transform duration-500 transform translate-y-[45%] group-hover:translate-y-0">
-                <h2 className="font-mclaren font-medium text-2xl text-[#fffbfc]">User Interface Design</h2>
+              <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
+                <h2 className="font-mclaren font-medium mb-2 text-2xl text-[#fffbfc]">User Interface Design</h2>
                 <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">Why only UI? While I admire the world of UX Design, I haven’t yet had the opportunity to practice it or work on a project that truly immerses me in that space. UI Design feels like a natural starting point, and I’m excited to build a strong foundation before diving deeper into UX.</p>
               </div>
             </div>
@@ -34,8 +34,8 @@ const Home = () => {
 
           <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/webdev.jpeg')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
             <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur-sm duration-500">
-              <div className="w-full h-full flex flex-col gap-2 justify-end transition-transform duration-500 transform translate-y-[45%] group-hover:translate-y-0">
-                <h2 className="font-mclaren font-medium text-2xl text-[#fffbfc]">Web Development</h2>
+              <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
+                <h2 className="font-mclaren font-medium mb-2 text-2xl text-[#fffbfc]">Web Development</h2>
                 <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">It’s a field that excites me because the possibilities feel endless. I’ve recently started exploring frameworks like Tailwind CSS and Laravel. The ability to build something tangible—not just daydream about it, but see it come to life right in front of my eyes—is truly indescribable.</p>
               </div>
             </div>
