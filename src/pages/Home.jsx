@@ -3,23 +3,105 @@ import { Link } from "react-router-dom";
 import Quotes from "../components/Quotes";
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <section className="pt-10 pb-16 px-32 flex flex-col flex-grow items-center justify-center">
       <h1 className="text-7xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
-        I do Design during the{" "}
-        <span className="text-[#fffbfc] animate-changeColorDay">Day</span>, then
-        Code at{" "}
-        <span className="text-[#fffbfc] animate-changeColorNight">Night</span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[0ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          I&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[100ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          do&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[200ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          Design&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[300ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          during&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[400ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          the&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[500ms] text-[#CAFE48] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          Day&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[600ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          then&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[700ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          Code&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[800ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          at&nbsp;
+        </span>
+        <span 
+          className={`inline-block transform transition-all duration-700 delay-[900ms] text-[#57467B] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
+        >
+          Night
+        </span>
       </h1>
 
-      <div className="mt-3 font-nunito font-light text-lg text-[#fffbfc]/75 text-center leading-tight">
+      {/* Animated Introduction Text */}
+      <div 
+        className={`mt-3 font-nunito font-light text-lg text-[#fffbfc]/75 text-center leading-tight transform transition-all duration-700 delay-[1000ms] ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+        }`}
+      >
         <p>Hi, I'm Yodanis, an IT Enthusiast with a diverse skill set.</p>
         <p>
           Currently working on to figure out what to do in the tech world 🤭
         </p>
       </div>
 
-      <div className="flex flex-row gap-6 items-center justify-center mt-6">
+      {/* Animated Buttons */}
+      <div 
+        className={`flex flex-row gap-6 items-center justify-center mt-6 transform transition-all duration-700 delay-[1200ms] ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+        }`}
+      >
         <button className="font-nunito font-medium text-lg text-[#fffbfc]/30 px-10 py-5 hover:bg-[#fffbfc]/5 duration-500">
           Connect with me
         </button>
