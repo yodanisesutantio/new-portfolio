@@ -1,157 +1,126 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Link } from "react-router-dom";
+import ThreeBox from "../components/ThreeBox";
 
 const Projects = () => {
   return (
-    <section className="py-12 px-32 flex flex-col flex-grow items-center justify-center">
-      <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
-        Recent Projects
-      </h1>
-      <p className="mt-2 w-96 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight">
-        I've done varying works across my educational years, below is my most
-        proud of.
-      </p>
+    <section className="py-12 px-32 flex flex-col flex-grow gap-5 items-center justify-center">
+      <div className="flex flex-col gap-4 w-full">
+        <div className="flex-shrink-0 w-full grid grid-cols-2">
+          <div className="flex flex-col items-start w-full">
+            <p className="text-lg font-nunito font-medium text-[#fffbfc] leading-snug">
+              Tech Field
+            </p>
+            <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] leading-snug">
+              Project Name
+            </h1>
+          </div>
 
-      <div className="flex flex-col w-full my-8 px-32">
-        <Link
-          to="/projects"
-          className="flex flex-row w-full justify-between py-6 pl-1 pr-0.5 border-b border-[#fffbfc]"
-        >
-          <div className="w-[27rem] flex flex-col items-start gap-2">
-            <h2 className="text-2xl font-mclaren font-semibold text-[#fffbfc] leading-snug">
-              Project Name 1
+          <div className="flex flex-col gap-1 items-end">
+            <h2 className="text-2xl font-mclaren font-medium text-[#fffbfc] text-right leading-snug">
+              Next Up: <br /> Project Name 2
             </h2>
-            <p className="font-nunito font-light text-base text-[#fffbfc]/75 leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div className="flex flex-col items-end gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-8 h-8"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="#fffbfc"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
-              ></path>
-            </svg>
-            <p className="font-nunito font-light pr-1 text-base text-[#fffbfc]/75 leading-tight">
-              2024
-            </p>
-          </div>
-        </Link>
 
-        <Link
-          to="/projects"
-          className="flex flex-row w-full justify-between py-6 pl-1 pr-0.5 border-b border-[#fffbfc]"
-        >
-          <div className="w-[27rem] flex flex-col items-start gap-2">
-            <h2 className="text-2xl font-mclaren font-semibold text-[#fffbfc] leading-snug">
-              Project Name 1
-            </h2>
-            <p className="font-nunito font-light text-base text-[#fffbfc]/75 leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div className="flex flex-col items-end gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-8 h-8"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="#fffbfc"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
-              ></path>
-            </svg>
-            <p className="font-nunito font-light pr-1 text-base text-[#fffbfc]/75 leading-tight">
-              2024
-            </p>
-          </div>
-        </Link>
+            <div className="w-full flex flex-row gap-6 justify-end">
+              <button
+                type="button"
+                className="flex flex-row gap-1 justify-center items-center text-[#fffbfc] opacity-40 hover:opacity-100 duration-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 flex items-center justify-center"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="m12 6l-6 6l6 6m6-12l-6 6l6 6"
+                  ></path>
+                </svg>
+                Previous Project
+              </button>
 
-        <Link
-          to="/projects"
-          className="flex flex-row w-full justify-between py-6 pl-1 pr-0.5 border-b border-[#fffbfc]"
-        >
-          <div className="w-[27rem] flex flex-col items-start gap-2">
-            <h2 className="text-2xl font-mclaren font-semibold text-[#fffbfc] leading-snug">
-              Project Name 1
-            </h2>
-            <p className="font-nunito font-light text-base text-[#fffbfc]/75 leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+              <button
+                type="button"
+                className="flex flex-row gap-1 justify-center items-center text-[#fffbfc] opacity-40 hover:opacity-100 duration-500"
+              >
+                Next Project
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 flex items-center justify-center"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="m12 18l6-6l-6-6M6 18l6-6l-6-6"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div className="flex flex-col items-end gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-8 h-8"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="#fffbfc"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
-              ></path>
-            </svg>
-            <p className="font-nunito font-light pr-1 text-base text-[#fffbfc]/75 leading-tight">
-              2024
-            </p>
-          </div>
-        </Link>
+        </div>
 
-        <Link
-          to="/projects"
-          className="flex flex-row w-full justify-between py-6 pl-1 pr-0.5 border-b border-[#fffbfc]"
-        >
-          <div className="w-[27rem] flex flex-col items-start gap-2">
-            <h2 className="text-2xl font-mclaren font-semibold text-[#fffbfc] leading-snug">
-              Project Name 1
-            </h2>
-            <p className="font-nunito font-light text-base text-[#fffbfc]/75 leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        {/* 3d Canvas */}
+        <div className="row-span-2 h-[300px] flex justify-center items-center gap-3 bg-transparent">
+          <Canvas
+            className="w-full h-full"
+            camera={{ position: [3, 3, 3] }}
+            gl={{ alpha: false }}
+            style={{ background: "#454545" }}
+          >
+            <ThreeBox />
+            <OrbitControls />
+          </Canvas>
+        </div>
+
+        <div className="w-full grid grid-cols-2 items-end gap-6">
+          <div className="w-3/4">
+            <p className="text-base font-nunito font-light text-[#fffbfc]/75 leading-snug line-clamp-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              similique nostrum mollitia perferendis, impedit molestias at, ex,
+              repudiandae laborum explicabo officia vero dignissimos repellendus
+              voluptatem fugit quisquam corporis et odio!
             </p>
           </div>
-          <div className="flex flex-col items-end gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-8 h-8"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
+
+          <div className="w-full flex flex-row items-end justify-end">
+            <Link
+              to="/projects"
+              className="h-16 pl-7 pr-5 flex gap-2 items-center justify-center font-nunito font-extrabold text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] duration-500"
             >
-              <path
-                fill="none"
-                stroke="#fffbfc"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
-              ></path>
-            </svg>
-            <p className="font-nunito font-light pr-1 text-base text-[#fffbfc]/75 leading-tight">
-              2024
-            </p>
+              Open Project Name
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 flex items-center justify-center"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+                ></path>
+              </svg>
+            </Link>
           </div>
-        </Link>
+        </div>
       </div>
     </section>
   );
