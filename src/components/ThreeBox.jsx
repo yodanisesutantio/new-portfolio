@@ -6,11 +6,10 @@ const ThreeBox = () => {
 
   return (
     <>
-      <ambientLight intensity={1} />
-      <pointLight position={[10, 10, 10]} />
+      <ambientLight intensity={0.8} />
       <mesh ref={meshRef}>
-        <boxGeometry args={[3.5, 3.5, 3.5]} />
-        <meshStandardMaterial color="#CAFE48" />
+        <boxGeometry args={[3,3,3]} />
+        <meshBasicMaterial color="#97F" />
       </mesh>
     </>
   );
