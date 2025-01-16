@@ -113,15 +113,29 @@ const Home = () => {
         </Link>
       </div>
 
-      <h1 className="mt-24 text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
+      <h1 
+        className={`mt-24 text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 delay-[1400ms] ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+        }`}
+      >
         What I really want to do?
       </h1>
-      <p className="mt-2 w-96 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight">
+
+      <p 
+        className={`mt-2 w-96 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight transform transition-all duration-700 delay-[1600ms] ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+        }`}
+      >
         I haven't decided yet, since I love both of them equally. (Oh, do please
         hover over the image below!)
       </p>
 
-      <div className="mt-8 w-full grid grid-cols-2 gap-4">
+      <div 
+        className={`mt-8 w-full grid grid-cols-2 gap-4 transform transition-all duration-700 delay-[1800ms] ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+        }`}
+      >
+        {/* UI Design Card */}
         <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/uid.jpeg')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
           <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur-sm duration-500">
             <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
@@ -129,16 +143,17 @@ const Home = () => {
                 User Interface Design
               </h2>
               <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Why only UI? While I admire the world of UX Design, I haven’t
+                Why only UI? While I admire the world of UX Design, I haven't
                 yet had the opportunity to practice it or work on a project that
                 truly immerses me in that space. UI Design feels like a natural
-                starting point, and I’m excited to build a strong foundation
+                starting point, and I'm excited to build a strong foundation
                 before diving deeper into UX.
               </p>
             </div>
           </div>
         </div>
 
+        {/* Web Development Card */}
         <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/webdev.jpeg')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
           <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur-sm duration-500">
             <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
@@ -146,8 +161,8 @@ const Home = () => {
                 Web Development
               </h2>
               <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                It’s a field that excites me because the possibilities feel
-                endless. I’ve recently started exploring frameworks like
+                It's a field that excites me because the possibilities feel
+                endless. I've recently started exploring frameworks like
                 Tailwind CSS and Laravel. The ability to build something
                 tangible—not just daydream about it, but see it come to life
                 right in front of my eyes—is truly indescribable.
