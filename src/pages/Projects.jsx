@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Link } from "react-router-dom";
 import ThreeBox from "../components/ThreeBox";
+import Kemudi from "../components/Kemudi";
 
 const Projects = () => {
   return (
@@ -74,16 +75,8 @@ const Projects = () => {
         </div>
 
         {/* 3d Canvas */}
-        <div className="row-span-2 h-[300px] flex justify-center items-center gap-3 bg-transparent">
-          <Canvas
-            className="w-full h-full"
-            camera={{ position: [3, 3, 3] }}
-            gl={{ alpha: false }}
-            style={{ background: "#454545" }}
-          >
-            <ThreeBox />
-            <OrbitControls />
-          </Canvas>
+        <div className="row-span-2 bg-slate-700 h-[300px] flex justify-center items-center gap-3 bg-transparent">
+          <Kemudi />
         </div>
 
         <div className="w-full grid grid-cols-2 items-end gap-6">
