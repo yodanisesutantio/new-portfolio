@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Quotes from "../components/Quotes";
@@ -90,7 +91,7 @@ const Home = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
         }`}
       >
-        <p>Hi, I'm Yodanis, an IT Enthusiast with a diverse skill set.</p>
+        <p>Hi, I&rsquo;m Yodanis, an IT Enthusiast with a diverse skill set.</p>
         <p>
           Currently working on to figure out what to do in the tech world 🤭
         </p>
@@ -126,7 +127,7 @@ const Home = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
         }`}
       >
-        I haven't decided yet, since I love both of them equally. (Oh, do please
+        I haven&rsquo;t decided yet, since I love both of them equally. (Oh, do please
         hover over the image below!)
       </p>
 
@@ -143,10 +144,10 @@ const Home = () => {
                 User Interface Design
               </h2>
               <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Why only UI? While I admire the world of UX Design, I haven't
+                Why only UI? While I admire the world of UX Design, I haven&rsquo;t
                 yet had the opportunity to practice it or work on a project that
                 truly immerses me in that space. UI Design feels like a natural
-                starting point, and I'm excited to build a strong foundation
+                starting point, and I&rsquo;m excited to build a strong foundation
                 before diving deeper into UX.
               </p>
             </div>
@@ -161,8 +162,8 @@ const Home = () => {
                 Web Development
               </h2>
               <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                It's a field that excites me because the possibilities feel
-                endless. I've recently started exploring frameworks like
+                It&rsquo;s a field that excites me because the possibilities feel
+                endless. I&rsquo;ve recently started exploring frameworks like
                 Tailwind CSS and Laravel. The ability to build something
                 tangible—not just daydream about it, but see it come to life
                 right in front of my eyes—is truly indescribable.
