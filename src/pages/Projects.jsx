@@ -10,9 +10,9 @@ import Kemudi from "../components/Kemudi";
 const Projects = () => {
   return (
     <section className="py-12 px-32 flex flex-col flex-grow gap-5 items-center justify-center">
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col justify-between w-full h-full relative">
         {/* Heading and Navigate to Other Project Wrapper */}
-        <div className="flex-shrink-0 w-full grid grid-cols-2">
+        <div className="flex-shrink-0 w-full grid grid-cols-2 z-20">
           <div className="flex flex-col items-start w-full">
             <p className="text-lg font-nunito font-medium text-[#fffbfc] leading-snug">
               Tech Field
@@ -78,12 +78,12 @@ const Projects = () => {
         </div>
 
         {/* 3d Canvas */}
-        <div className="row-span-2 bg-transparent h-[300px] flex justify-center items-center gap-3 overflow-visible">
+        <div className="absolute top-0 left-0 row-span-2 w-full h-full flex justify-center items-center gap-3 overflow-visible">
           <Kemudi />
         </div>
 
         {/* Description and CTA Wrapper */}
-        <div className="w-full grid grid-cols-2 items-end gap-6">
+        <div className="w-full grid grid-cols-2 z-20 items-end gap-6">
           <div className="w-3/4">
             <p className="text-base font-nunito font-light text-[#fffbfc]/75 leading-snug line-clamp-4">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste

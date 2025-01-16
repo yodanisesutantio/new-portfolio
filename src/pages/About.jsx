@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 const About = () => {
   return (
     <section className="py-6 px-32 flex flex-col flex-grow gap-5 items-center justify-center">
       <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
-        Hi, it's me!
+        Hi, it&rsquo;s me!
       </h1>
 
       <div className="w-full grid grid-cols-3 gap-6">
@@ -30,8 +31,8 @@ const About = () => {
             </p>
 
             <p className="font-nunito font-extralight text-2xl italic text-[#fffbfc]/50">
-              "Talent hits a target no one else can hit; Genius hits a target no
-              one else can see."
+              &ldquo;Talent hits a target no one else can hit; Genius hits a target no
+              one else can see.&rdquo;
             </p>
           </div>
 

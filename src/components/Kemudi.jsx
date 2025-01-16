@@ -28,11 +28,11 @@ const Kemudi = () => {
 
   return (
     <div className="w-full h-full overflow-visible">
-      <Canvas className="bg-transparent overflow-visible" style={{ overflow: 'visible' }}>
+      <Canvas className="bg-transparent overflow-visible pt-16" style={{ overflow: 'visible' }}>
         <PerspectiveCamera
           // ref={cameraRef}
           makeDefault
-          position={[3, 2, 3]}
+          position={[3, 3, 4]}
           fov={60}
         />
         <ambientLight intensity={0.7} />
