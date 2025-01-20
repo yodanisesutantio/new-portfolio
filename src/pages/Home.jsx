@@ -87,9 +87,9 @@ const Home = () => {
 
       {/* Animated Introduction Text */}
       <div 
-        className={`mt-3 font-nunito font-light text-lg text-[#fffbfc]/75 text-center leading-tight transform transition-all duration-700 delay-[1000ms] ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
-        }`}
+          className={`mt-3 font-nunito font-light text-lg text-[#fffbfc]/75 text-center leading-tight transform transition-all duration-700 delay-[1000ms] ${
+            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
       >
         <p>Hi, I&rsquo;m Yodanis, an IT Enthusiast with a diverse skill set.</p>
         <p>

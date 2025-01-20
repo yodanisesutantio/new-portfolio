@@ -45,7 +45,7 @@ const Navbar = () => {
             <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="/socials"
             className={`flex flex-col font-nunito font-semibold ${
@@ -57,7 +57,7 @@ const Navbar = () => {
             Socials
             <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             to="/resume"

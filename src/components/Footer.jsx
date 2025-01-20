@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -27,14 +28,14 @@ const Footer = () => {
             Projects
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="/socials"
             className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-sm hover:text-[#fffbfc] duration-500 group"
           >
             Socials
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             to="/resume"
