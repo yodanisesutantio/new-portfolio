@@ -24,7 +24,7 @@ const Projects = () => {
         }`}
       >
         {/* Kemudi */}
-        <div className="group/item flex flex-col gap-2 items-end justify-start w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative">
+        <div className="group/item flex flex-col gap-2 items-end justify-start w-1/4 h-full bg-[url('/img/kemudi-thumb.jpg')] bg-center bg-cover cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative">
 
         </div>
         {/* Logo SI */}
