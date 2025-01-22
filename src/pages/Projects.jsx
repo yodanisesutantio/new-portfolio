@@ -19,26 +19,130 @@ const Projects = () => {
         Recent Projects
       </h1>
 
-      <div className={`flex-1 w-full min-h-0 flex flex-row gap-2 px-20 items-center justify-center transform transition-all duration-700 delay-150 ${
+      <div
+        className={`flex-1 w-full min-h-0 flex flex-row gap-2 px-20 items-center justify-center transform transition-all duration-700 delay-150 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
         {/* Kemudi */}
-        <div className="group/item flex flex-col gap-2 items-end justify-start w-1/4 h-full bg-[url('/img/kemudi-thumb.jpg')] bg-center bg-cover cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative">
+        {/* This only covers enough */}
+        <a
+          href="https://sisenep.com/kemudi2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+        >
+          {/* Content */}
+          <div className="w-full h-fit p-4 transition-transform group-hover/item:bg-[#57467B] duration-500 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <p className="font-mclaren font-light text-base text-[#fffbfc]/85">
+                2024, Web Development
+              </p>
+              <h2 className="font-mclaren font-bold text-2xl text-[#fffbfc]">
+                KEMUDI
+              </h2>
+              <p className="font-nunito font-light text-base text-[#fffbfc]/85">
+                Your project description goes here. This text will slide up and
+                fade in on hover, just like the original effect.
+              </p>
+            </div>
+          </div>
+        </a>
 
-        </div>
-        {/* Logo SI */}
-        <div className="group/item flex flex-col gap-2 items-end justify-start w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative">
+        {/* This overlay covers the entire image */}
+        {/* <a
+          href="https://sisenep.com/kemudi2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/item flex flex-col w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5"
+        >
+          <div className="w-full h-full p-4 group-hover/item:bg-[#010400]/40 group-hover/item:backdrop-blur duration-500">
+            <div className="w-full h-full flex flex-col justify-end gap-1 transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover/item:translate-y-0">
+              <p className="font-mclaren font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover/item:opacity-100 group-hover/item:translate-y-0 transition-all duration-500">
+                2024, Web Development
+              </p>
+              <h2 className="font-mclaren font-semibold text-2xl text-[#fffbfc]">
+                KEMUDI
+              </h2>
+              <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover/item:opacity-100 group-hover/item:translate-y-0 transition-all duration-500">
+                Your project description goes here. This text will slide up and
+                fade in on hover, just like the original effect.
+              </p>
+            </div>
+          </div>
+        </a> */}
 
-        </div>
         {/* 70 RAD */}
-        <div className="group/item flex flex-col gap-2 items-end justify-start w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative">
+        <a
+          href="https://www.figma.com/design/aPp4xCfXp8K69D5Y5FH4JQ/RAD-Design-Challenge?node-id=1592-4270&t=FLccCeElk0iF5lS6-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/70rad-thumb.png')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+        >
+          {/* Content */}
+          <div className="w-full h-fit p-4 transition-transform group-hover/item:bg-[#CAFE48] duration-500 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <p className="font-mclaren font-light text-base text-[#010400]/85">
+                2024, UI Design
+              </p>
+              <h2 className="font-mclaren font-bold text-2xl text-[#010400]">
+                70RAD Design Challenge
+              </h2>
+              <p className="font-nunito font-light text-base text-[#010400]/85">
+                Your project description goes here. This text will slide up and
+                fade in on hover, just like the original effect.
+              </p>
+            </div>
+          </div>
+        </a>
 
-        </div>
+        {/* Logo SI */}
+        <a
+          href="https://bit.ly/logosisfor"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+        >
+          {/* Content */}
+          <div className="w-full h-fit p-4 transition-transform group-hover/item:bg-[#010400]/40 group-hover/item:backdrop-blur duration-500 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <p className="font-mclaren font-light text-base text-[#fffbfc]/85">
+                2023, Logo Design
+              </p>
+              <h2 className="font-mclaren font-bold text-2xl text-[#fffbfc]">
+                Information Systems of ITATS
+              </h2>
+              <p className="font-nunito font-light text-base text-[#fffbfc]/85">
+                Your project description goes here. This text will slide up and
+                fade in on hover, just like the original effect.
+              </p>
+            </div>
+          </div>
+        </a>
+
         {/* Archdaily UX Case Study */}
-        <div className="group/item flex flex-col gap-2 items-end justify-start w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative">
-
-        </div>
+        <a
+          href="https://www.behance.net/gallery/181193573/UX-Case-Study-Archdaily"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+        >
+          {/* Content */}
+          <div className="w-full h-fit p-4 transition-transform group-hover/item:bg-[#010400]/40 group-hover/item:backdrop-blur duration-500 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <p className="font-mclaren font-light text-base text-[#fffbfc]/85">
+                2023, Case Study
+              </p>
+              <h2 className="font-mclaren font-bold text-2xl text-[#fffbfc]">
+                Archdaily UX Case Study
+              </h2>
+              <p className="font-nunito font-light text-base text-[#fffbfc]/85">
+                Your project description goes here. This text will slide up and
+                fade in on hover, just like the original effect.
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
   );

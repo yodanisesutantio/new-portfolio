@@ -137,8 +137,8 @@ const Home = () => {
         }`}
       >
         {/* UI Design Card */}
-        <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/uid.jpeg')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
-          <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur-sm duration-500">
+        <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/uid.png')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
+          <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur duration-500">
             <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
               <h2 className="font-mclaren font-medium mb-2 text-2xl text-[#fffbfc]">
                 User Interface Design
@@ -155,8 +155,8 @@ const Home = () => {
         </div>
 
         {/* Web Development Card */}
-        <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/webdev.jpeg')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
-          <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur-sm duration-500">
+        <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/webdev.png')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
+          <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur duration-500">
             <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
               <h2 className="font-mclaren font-medium mb-2 text-2xl text-[#fffbfc]">
                 Web Development
