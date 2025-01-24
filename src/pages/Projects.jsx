@@ -42,8 +42,7 @@ const Projects = () => {
                 KEMUDI
               </h2>
               <p className="font-nunito font-light text-base text-[#fffbfc]/85">
-                Your project description goes here. This text will slide up and
-                fade in on hover, just like the original effect.
+                A web-based platform transforming driver education by connecting learners with schools through interactive lessons, smart quizzes, and seamless scheduling.
               </p>
             </div>
           </div>
@@ -89,8 +88,7 @@ const Projects = () => {
                 70RAD Design Challenge
               </h2>
               <p className="font-nunito font-light text-base text-[#010400]/85">
-                Your project description goes here. This text will slide up and
-                fade in on hover, just like the original effect.
+                A self-driven design exploration challenging my creative boundaries through daily UI recreations and focused 10-day design projects, documenting my skill progression.
               </p>
             </div>
           </div>
@@ -113,8 +111,7 @@ const Projects = () => {
                 Information Systems of ITATS
               </h2>
               <p className="font-nunito font-light text-base text-[#fffbfc]/85">
-                Your project description goes here. This text will slide up and
-                fade in on hover, just like the original effect.
+                A logo made when I immerse myself in a design competition hosted by my majoring college department to make a new and modern logo, it is a full gamble at that time since I know a little about logo design, but guess what? I won, and the logo has been used since
               </p>
             </div>
           </div>
