@@ -33,7 +33,7 @@ const Projects = () => {
           className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
-          <div className="w-full h-fit p-4 transition-transform group-hover/item:bg-[#57467B] duration-500 transform translate-y-full group-hover/item:translate-y-0">
+          <div className="w-full h-fit p-4 transition-transform bg-[#57467B] duration-500 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <p className="font-mclaren font-light text-base text-[#fffbfc]/85">
                 2024, Web Development
@@ -74,13 +74,13 @@ const Projects = () => {
 
         {/* 70 RAD */}
         <a
-          href="https://www.figma.com/design/aPp4xCfXp8K69D5Y5FH4JQ/RAD-Design-Challenge?node-id=1592-4270&t=FLccCeElk0iF5lS6-1"
+          href="https://www.figma.com/design/aPp4xCfXp8K69D5Y5FH4JQ/RAD-Design-Challenge?node-id=33-2&t=QZrSCGsk6JoTbrxr-1"
           target="_blank"
           rel="noopener noreferrer"
           className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/70rad-thumb.png')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
-          <div className="w-full h-fit p-4 transition-transform group-hover/item:bg-[#CAFE48] duration-500 transform translate-y-full group-hover/item:translate-y-0">
+          <div className="w-full h-fit p-4 transition-transform bg-[#CAFE48] duration-500 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <p className="font-mclaren font-light text-base text-[#010400]/85">
                 2024, UI Design
