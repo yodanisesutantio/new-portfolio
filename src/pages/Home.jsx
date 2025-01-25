@@ -137,36 +137,34 @@ const Home = () => {
         }`}
       >
         {/* UI Design Card */}
-        <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/uid.png')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
-          <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur duration-500">
-            <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
-              <h2 className="font-mclaren font-medium mb-2 text-2xl text-[#fffbfc]">
+        <div
+          className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 relative"
+        >
+          {/* Content */}
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <h2 className="font-mclaren font-bold text-2xl text-[#CAFE48]">
                 User Interface Design
               </h2>
-              <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Why only UI? While I admire the world of UX Design, I haven&rsquo;t
-                yet had the opportunity to practice it or work on a project that
-                truly immerses me in that space. UI Design feels like a natural
-                starting point, and I&rsquo;m excited to build a strong foundation
-                before diving deeper into UX.
+              <p className="font-nunito font-light text-base text-[#CAFE48]/85">
+                Why only UI? While I admire the world of UX Design, I haven&rsquo;t yet had the opportunity to practice it or work on a project that truly immerses me in that space. UI Design feels like a natural starting point, and I&rsquo;m excited to build a strong foundation before diving deeper into UX.
               </p>
             </div>
           </div>
         </div>
 
         {/* Web Development Card */}
-        <div className="w-full h-80 rounded overflow-hidden bg-[url('/img/webdev.png')] bg-cover bg-bottom saturate-0 hover:saturate-100 group duration-500">
-          <div className="p-4 w-full h-full cursor-pointer group-hover:bg-[#010400]/40 group-hover:backdrop-blur duration-500">
-            <div className="w-full h-full flex flex-col justify-end transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover:translate-y-0">
-              <h2 className="font-mclaren font-medium mb-2 text-2xl text-[#fffbfc]">
+        <div
+          className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 relative"
+        >
+          {/* Content */}
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <h2 className="font-mclaren font-bold text-2xl text-[#CAFE48]">
                 Web Development
               </h2>
-              <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                It&rsquo;s a field that excites me because the possibilities feel
-                endless. I&rsquo;ve recently started exploring frameworks like
-                Tailwind CSS and Laravel. The ability to build something
-                tangible—not just daydream about it, but see it come to life
-                right in front of my eyes—is truly indescribable.
+              <p className="font-nunito font-light text-base text-[#CAFE48]/85">
+                It&rsquo;s a field that excites me because the possibilities feel endless. I&rsquo;ve recently started exploring frameworks like Tailwind CSS and Laravel. The ability to build something tangible—not just daydream about it, but see it come to life right in front of my eyes—is truly indescribable.
               </p>
             </div>
           </div>
