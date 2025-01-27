@@ -30,11 +30,11 @@ const Projects = () => {
           href="https://sisenep.com/kemudi2"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/kemudi-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/kemudi-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <p className="font-mclaren font-light text-base text-[#CAFE48]/85">
                 2024, Web Development
@@ -43,7 +43,9 @@ const Projects = () => {
                 KEMUDI
               </h2>
               <p className="font-nunito font-light text-base text-[#CAFE48]/85">
-                A web-based platform transforming driver education by connecting learners with schools through interactive lessons, smart quizzes, and seamless scheduling.
+                A web-based platform transforming driver education by connecting
+                learners with schools through interactive lessons, smart
+                quizzes, and seamless scheduling.
               </p>
             </div>
           </div>
@@ -54,17 +56,17 @@ const Projects = () => {
           href="https://sisenep.com/kemudi2"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5"
+          className="group/item flex flex-col w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5"
         >
-          <div className="w-full h-full p-4 group-hover/item:bg-[#010400]/40 group-hover/item:backdrop-blur-sm duration-500">
-            <div className="w-full h-full flex flex-col justify-end gap-1 transition-transform duration-500 transform translate-y-[calc(100%-6rem)] group-hover/item:translate-y-0">
-              <p className="font-mclaren font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover/item:opacity-100 group-hover/item:translate-y-0 transition-all duration-500">
+          <div className="w-full h-full p-4 group-hover/item:bg-[#010400]/40 group-hover/item:backdrop-blur-sm duration-700">
+            <div className="w-full h-full flex flex-col justify-end gap-1 transition-transform duration-700 transform translate-y-[calc(100%-6rem)] group-hover/item:translate-y-0">
+              <p className="font-mclaren font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover/item:opacity-100 group-hover/item:translate-y-0 transition-all duration-700">
                 2024, Web Development
               </p>
               <h2 className="font-mclaren font-semibold text-2xl text-[#fffbfc]">
                 KEMUDI
               </h2>
-              <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover/item:opacity-100 group-hover/item:translate-y-0 transition-all duration-500">
+              <p className="font-nunito font-light text-base text-[#fffbfc]/85 opacity-0 transform translate-y-4 group-hover/item:opacity-100 group-hover/item:translate-y-0 transition-all duration-700">
                 Your project description goes here. This text will slide up and
                 fade in on hover, just like the original effect.
               </p>
@@ -77,11 +79,11 @@ const Projects = () => {
           href="https://www.figma.com/design/aPp4xCfXp8K69D5Y5FH4JQ/RAD-Design-Challenge?node-id=33-2&t=QZrSCGsk6JoTbrxr-1"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/70rad-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/70rad-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/70rad-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/70rad-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <p className="font-mclaren font-light text-base text-[#CAFE48]/85">
                 2024, UI Design
@@ -90,7 +92,9 @@ const Projects = () => {
                 70RAD Design Challenge
               </h2>
               <p className="font-nunito font-light text-base text-[#CAFE48]/85">
-                A self-driven design exploration challenging my creative boundaries through daily UI recreations and focused 10-day design projects, documenting my skill progression.
+                A self-driven design exploration challenging my creative
+                boundaries through daily UI recreations and focused 10-day
+                design projects, documenting my skill progression.
               </p>
             </div>
           </div>
@@ -101,11 +105,11 @@ const Projects = () => {
           href="https://bit.ly/logosisfor"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/si-logo-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/si-logo-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <p className="font-mclaren font-light text-base text-[#CAFE48]/85">
                 2023, Logo Design
@@ -114,7 +118,9 @@ const Projects = () => {
                 Information Systems of ITATS
               </h2>
               <p className="font-nunito font-light text-base text-[#CAFE48]/85">
-                Navigating a design challenge with minimal experience, I created a winning logo that became the official emblem for my college department.
+                Navigating a design challenge with minimal experience, I created
+                a winning logo that became the official emblem for my college
+                department.
               </p>
             </div>
           </div>
@@ -125,11 +131,11 @@ const Projects = () => {
           href="https://www.behance.net/gallery/181193573/UX-Case-Study-Archdaily"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/archdaily-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/archdaily-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <p className="font-mclaren font-light text-base text-[#CAFE48]/85">
                 2023, Case Study
@@ -138,7 +144,9 @@ const Projects = () => {
                 Archdaily UX Case Study
               </h2>
               <p className="font-nunito font-light text-base text-[#CAFE48]/85">
-                Crafting a comprehensive UX case study with permission from Archdaily, diving deep into design principles and gaining valuable industry insights.
+                Crafting a comprehensive UX case study with permission from
+                Archdaily, diving deep into design principles and gaining
+                valuable industry insights.
               </p>
             </div>
           </div>

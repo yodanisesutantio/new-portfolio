@@ -30,7 +30,7 @@ const Projects = () => {
             <div className="w-full flex flex-row gap-6 justify-end">
               <button
                 type="button"
-                className="flex flex-row gap-1 justify-center items-center text-[#fffbfc] opacity-40 hover:opacity-100 duration-500"
+                className="flex flex-row gap-1 justify-center items-center text-[#fffbfc] opacity-40 hover:opacity-100 duration-700"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Projects = () => {
 
               <button
                 type="button"
-                className="flex flex-row gap-1 justify-center items-center text-[#fffbfc] opacity-40 hover:opacity-100 duration-500"
+                className="flex flex-row gap-1 justify-center items-center text-[#fffbfc] opacity-40 hover:opacity-100 duration-700"
               >
                 Next Project
                 <svg
@@ -96,7 +96,7 @@ const Projects = () => {
           <div className="w-full flex flex-row items-end justify-end">
             <Link
               to="/projects"
-              className="h-16 pl-7 pr-5 flex gap-2 items-center justify-center font-nunito font-extrabold text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] duration-500"
+              className="h-16 pl-7 pr-5 flex gap-2 items-center justify-center font-nunito font-extrabold text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] duration-700"
             >
               Open Project Name
               <svg
