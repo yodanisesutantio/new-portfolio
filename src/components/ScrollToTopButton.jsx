@@ -12,7 +12,7 @@ const ScrollToTopButton = () => {
       const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
 
       // Show button only if scroll is between desired range
-      setShowButton(scrollPercentage >= 15 && scrollPercentage <= 92);
+      setShowButton(scrollPercentage >= 10 && scrollPercentage <= 92);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,24 +20,47 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    showButton && ( // Conditionally render the button
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-12 h-12 p-1.5 cursor-pointer bg-[#fffbfc] rounded-full fixed bottom-6 right-6 duration-500"
-        width="1em"
-        height="1em"
-        viewBox="0 0 48 48"
+    showButton && (
+      <div
+        className="fixed bottom-6 right-6 flex flex-col items-center justify-center gap-2 w-14 h-14 bg-[#fffbfc] rounded-full cursor-pointer hover:h-44 transition-all duration-700 group"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        <path
-          fill="none"
-          stroke="#fffbfc"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="4"
-          d="M24 6v36M12 18L24 6l12 12"
-        ></path>
-      </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-[#010400] shrink-0 duration-700 group-hover:hidden"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            className="shrink-0"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="4"
+            d="M24 6v36M12 18L24 6l12 12"
+          ></path>
+        </svg>
+
+        <span className="text-[#010400] font-medium rotate-90 w-fit group-hover:flex flex-row items-center justify-center gap-3 whitespace-nowrap shrink-0 hidden duration-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-[#010400] -rotate-90 shrink-0 duration-700"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="none"
+              className="shrink-0"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="4"
+              d="M24 6v36M12 18L24 6l12 12"
+            ></path>
+          </svg>
+          
+          Scroll To Top
+        </span>
+      </div>
     )
   );
 };
