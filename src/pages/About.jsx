@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="h-[calc(100vh-theme(spacing.16))] py-6 px-32 flex flex-col flex-grow gap-5 items-center justify-center">
+    <section className="h-[calc(100vh-(--spacing(16)))] py-6 px-32 flex flex-col grow gap-5 items-center justify-center">
       <h1
         className={`text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
@@ -27,7 +27,7 @@ const About = () => {
           <img
             src="img/yodanisesutantio_mugshot.png"
             alt="Yodanis E. Sutantio | Mugshot"
-            className="w-full h-full object-cover rounded-sm"
+            className="w-full h-full object-cover rounded-xs"
           />
         </div>
 

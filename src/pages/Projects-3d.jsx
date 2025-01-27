@@ -9,10 +9,10 @@ import Kemudi from "../components/Kemudi";
 
 const Projects = () => {
   return (
-    <section className="py-12 px-32 flex flex-col flex-grow gap-5 items-center justify-center">
+    <section className="py-12 px-32 flex flex-col grow gap-5 items-center justify-center">
       <div className="flex flex-col justify-between w-full h-full relative">
         {/* Heading and Navigate to Other Project Wrapper */}
-        <div className="flex-shrink-0 w-full grid grid-cols-2 z-20">
+        <div className="shrink-0 w-full grid grid-cols-2 z-20">
           <div className="flex flex-col items-start w-full">
             <p className="text-lg font-nunito font-medium text-[#fffbfc] leading-snug">
               Tech Field

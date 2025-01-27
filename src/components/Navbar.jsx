@@ -29,7 +29,7 @@ const Navbar = () => {
             } hover:text-[#fffbfc] duration-500 group`}
           >
             About
-            <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
+            <span className="w-full h-[3px] bg-linear-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
           </Link>
         </li>
         <li>
@@ -42,7 +42,7 @@ const Navbar = () => {
             } hover:text-[#fffbfc] duration-500 group`}
           >
             Projects
-            <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
+            <span className="w-full h-[3px] bg-linear-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
           </Link>
         </li>
         {/* <li>
@@ -55,7 +55,7 @@ const Navbar = () => {
             } hover:text-[#fffbfc] duration-500 group`}
           >
             Socials
-            <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
+            <span className="w-full h-[3px] bg-linear-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
           </Link>
         </li> */}
         <li>
@@ -68,7 +68,7 @@ const Navbar = () => {
             } hover:text-[#fffbfc] duration-500 group`}
           >
             Resume
-            <span className="w-full h-[3px] bg-gradient-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
+            <span className="w-full h-[3px] bg-linear-to-l from-[#CAFE48] to-[#57467B] transform scale-x-0 transition-transform duration-500 origin-right rounded-full group-hover:scale-x-100"></span>
           </Link>
         </li>
       </ul>

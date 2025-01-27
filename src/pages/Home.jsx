@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="pt-10 pb-16 px-32 flex flex-col flex-grow items-center justify-center">
+    <section className="pt-10 pb-16 px-32 flex flex-col grow items-center justify-center">
       <h1 className="text-7xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
         <span
           className={`inline-block transform transition-all duration-700 delay-[0ms] ${
@@ -137,7 +137,7 @@ const Home = () => {
         }`}
       >
         {/* UI Design Card */}
-        <div className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 relative">
+        <div className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 relative">
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
@@ -156,7 +156,7 @@ const Home = () => {
         </div>
 
         {/* Web Development Card */}
-        <div className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 relative">
+        <div className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-500 relative">
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-500 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
@@ -184,7 +184,7 @@ const Home = () => {
       </p>
 
       <div className="relative flex flex-col gap-6 justify-center items-center mt-8">
-        <div className="absolute top-2 transform bg-gradient-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
+        <div className="absolute top-2 transform bg-linear-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
 
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
@@ -461,10 +461,10 @@ const Home = () => {
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-between">
-          <div className="w-24 h-24 cursor-pointer bg-none duration-500 group [transform-style:preserve-3d]">
+          <div className="w-24 h-24 cursor-pointer bg-none duration-500 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full transform transition-all duration-500 rotate-y-90"
+              className="w-full h-full transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"

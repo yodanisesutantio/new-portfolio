@@ -69,7 +69,7 @@ const Quotes = () => {
   }, []); // Empty dependency array ensures it runs only once
 
   return (
-    <div className="flex flex-col items-center justify-center gap-3 rounded bg-[#fffbfc]/5 p-6">
+    <div className="flex flex-col items-center justify-center gap-3 rounded-sm bg-[#fffbfc]/5 p-6">
       <h2 className="font-mclaren font-medium text-[#fffbfc] text-3xl">
         &quot;{quote.text}&quot;
       </h2>
