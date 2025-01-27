@@ -125,7 +125,7 @@ const Projects = () => {
           href="https://www.behance.net/gallery/181193573/UX-Case-Study-Archdaily"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/uid.jpeg')] bg-center cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/archdaily-thumb.png')] bg-center cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
           // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded saturate-0 hover:saturate-100 duration-500 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
