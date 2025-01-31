@@ -239,9 +239,9 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              src="/img/july-2002.png"
+              alt="The day I was born, July 2002"
+              className="pr-24 object-cover object-center h-72"
             />
           </div>
         </div>
@@ -268,9 +268,9 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              src="/img/january-2007.png"
+              alt="The day I was moved to a new house, January 2007"
+              className="pr-24 object-cover object-center h-72"
             />
           </div>
         </div>
@@ -494,7 +494,7 @@ const Home = () => {
 
         <div className="mt-12 px-60 flex flex-row items-center justify-between">
           {/* Github */}
-          <div className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
+          <a href="https://github.com/yodanisesutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
@@ -510,10 +510,10 @@ const Home = () => {
             </svg>
 
             <p className="font-nunito text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanisesutantio</p>
-          </div>
+          </a>
 
           {/* LinkedIn */}
-          <div className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
+          <a href="https://www.linkedin.com/in/yodanis-e-sutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
@@ -529,10 +529,10 @@ const Home = () => {
             </svg>
 
             <p className="font-nunito text-lg font-normal text-[#fffbfc] whitespace-nowrap">/in/yodanis-e-sutantio</p>
-          </div>
+          </a>
 
           {/* Behance */}
-          <div className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
+          <a href="https://www.behance.net/yodanis-e-sutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
@@ -548,7 +548,7 @@ const Home = () => {
             </svg>
 
             <p className="font-nunito text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanis-e-sutantio</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>
