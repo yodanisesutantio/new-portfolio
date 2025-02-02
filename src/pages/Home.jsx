@@ -240,7 +240,7 @@ const Home = () => {
 
             <img
               src="/img/july-2002.png"
-              alt="The day I was born, July 2002"
+              alt="a recreated image of the moment when I was born, July 2002"
               className="pr-24 object-cover object-center h-72"
             />
           </div>
@@ -269,7 +269,7 @@ const Home = () => {
 
             <img
               src="/img/january-2007.png"
-              alt="The day I was moved to a new house, January 2007"
+              alt="a recreated image of the day I was moved to a new house, January 2007"
               className="pr-24 object-cover object-center h-72"
             />
           </div>
@@ -297,9 +297,9 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              src="/img/august-2014.png"
+              alt="a recreation image of the start of my Junior High School years"
+              className="pr-24 object-cover object-center h-72"
             />
           </div>
         </div>
