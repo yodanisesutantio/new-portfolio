@@ -326,9 +326,9 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              src="/img/july-2017.png"
+              alt="a recreation image of myself alone in a computer laboratory learning more about my major"
+              className="pr-24 object-cover object-center h-72"
             />
           </div>
         </div>
@@ -354,9 +354,9 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              src="/img/september-2020.png"
+              alt="a recreation image of my bedroom with my laptop currently in an online meeting class in the midst of 2020 pandemic"
+              className="pr-24 object-cover object-center h-72"
             />
 
             <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
