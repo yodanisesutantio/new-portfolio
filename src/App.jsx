@@ -1,20 +1,19 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect, Suspense } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import React, { useState, useEffect, Suspense } from 'react';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
+import LoadingScreen from './components/LoadingScreen';
+import RivePreview from "./components/RivePreview";
 
 // Import your components using React.lazy
-const Navbar = React.lazy(() => import("./components/Navbar"));
-const Home = React.lazy(() => import("./pages/Home"));
-const About = React.lazy(() => import("./pages/About"));
-const Projects = React.lazy(() => import("./pages/Projects"));
-const Footer = React.lazy(() => import("./components/Footer"));
-const Resume = React.lazy(() => import("./pages/Resume"));
-import LoadingScreen from "./components/LoadingScreen";
-import RivePreview from "./components/RivePreview";
+const Navbar = React.lazy(() => import('./components/Navbar'));
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Projects = React.lazy(() => import('./pages/Projects'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const Resume = React.lazy(() => import('./pages/Resume'));
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
-
   const [isRiveReady, setIsRiveReady] = useState(false);
 
   const handleLoadComplete = () => {
@@ -23,7 +22,6 @@ const App = () => {
 
   useEffect(() => {
     if (isRiveReady) {
-      // Add a small delay before hiding the loading screen
       setTimeout(() => {
         setIsLoading(false);
       }, 500);
@@ -38,7 +36,7 @@ const App = () => {
         <LoadingScreen onLoadComplete={handleLoadComplete} />
       ) : (
         <Router>
-          <Suspense fallback={<div className="bg-[#010400]"></div>}>
+          <Suspense fallback={<LoadingScreen onLoadComplete={() => {}} />}>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />

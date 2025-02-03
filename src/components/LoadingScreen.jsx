@@ -21,13 +21,13 @@ const LoadingScreen = ({ onLoadComplete }) => {
           setIsRiveLoaded(true);
           // Notify parent component that loading can complete
           onLoadComplete();
-        }, 500); // Minimum display time for the animation
+        }, 1200); // Minimum display time for the animation
       }
     },
   });
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-[#010400] z-50">
+    <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="w-36 h-36">
         <RiveComponent />
       </div>
