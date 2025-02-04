@@ -279,35 +279,6 @@ const Home = () => {
           {/* Date */}
           <div className="flex justify-end items-stretch">
             <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
-              August, 2014
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              It marked the start of my junior high years, where I joined
-              multiple organizations and discovered what felt like my first
-              passion—video production.
-            </p>
-
-            <img
-              src="/img/august-2014.png"
-              alt="a recreation image of the start of my Junior High School years"
-              className="pr-24 object-cover object-center h-72"
-            />
-          </div>
-        </div>
-
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
               July, 2017
             </h2>
           </div>
@@ -390,7 +361,7 @@ const Home = () => {
             <img
               src="https://picsum.photos/700/500"
               alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              className="pr-24 object-cover object-center h-72"
             />
 
             <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
@@ -432,7 +403,7 @@ const Home = () => {
             <img
               src="https://picsum.photos/700/500"
               alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              className="pr-24 object-cover object-center h-72"
             />
           </div>
         </div>
@@ -461,7 +432,7 @@ const Home = () => {
             <img
               src="https://picsum.photos/700/500"
               alt="Placeholder"
-              className="pr-24 object-cover object-center"
+              className="pr-24 object-cover object-center h-72"
             />
           </div>
         </div>
