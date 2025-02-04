@@ -215,7 +215,7 @@ const Home = () => {
         time.
       </p>
 
-      <div className="relative flex flex-col gap-6 justify-center items-center mt-8">
+      <div className="relative flex flex-col gap-16 justify-center items-center mt-8">
         <div className="absolute top-2 transform bg-linear-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
 
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
@@ -363,12 +363,6 @@ const Home = () => {
               I honed my UI/UX knowledge and, along the way, stumbled upon Web
               Development—a discovery that opened up exciting new possibilities.
             </p>
-
-            <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
-            />
           </div>
         </div>
 
@@ -410,12 +404,6 @@ const Home = () => {
               page. While this was a milestone, my journey is far from over, as
               I continue exploring what’s next.
             </p>
-
-            <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
-              className="pr-24 object-cover object-center"
-            />
           </div>
         </div>
 
