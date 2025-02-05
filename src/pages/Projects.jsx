@@ -10,9 +10,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="h-[calc(100vh-(--spacing(16)))] py-6 px-24 flex flex-col grow gap-6 items-center justify-center">
+    <section className="h-[calc(100vh-(--spacing(16)))] py-6 px-4 sm:px-10 lg:px-32 2xl:px-44 flex flex-col grow gap-6 items-center justify-center">
       <h1
-        className={`text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 ${
+        className={`text-2xl md:text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -20,7 +20,7 @@ const Projects = () => {
       </h1>
 
       <div
-        className={`flex-1 w-full min-h-0 flex flex-row gap-2 px-20 items-center justify-center transform transition-all duration-700 delay-150 ${
+        className={`flex-1 w-full min-h-0 flex flex-col md:flex-row gap-2 lg:px-10 items-center justify-center transform transition-all duration-700 delay-150 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -30,8 +30,8 @@ const Projects = () => {
           href="https://sisenep.com/kemudi2"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/kemudi-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full  overflow-hidden bg-[url('/img/kemudi-thumb.png')] bg-cover md:bg-auto bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full bg-[url('/img/kemudi-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
@@ -79,8 +79,8 @@ const Projects = () => {
           href="https://www.figma.com/design/aPp4xCfXp8K69D5Y5FH4JQ/RAD-Design-Challenge?node-id=33-2&t=QZrSCGsk6JoTbrxr-1"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/70rad-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/70rad-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full overflow-hidden bg-[url('/img/70rad-thumb.png')] bg-cover md:bg-auto bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full bg-[url('/img/70rad-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
@@ -105,8 +105,8 @@ const Projects = () => {
           href="https://bit.ly/logosisfor"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/si-logo-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-cover md:bg-auto bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full bg-[url('/img/si-logo-thumb.png')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
@@ -131,8 +131,8 @@ const Projects = () => {
           href="https://www.behance.net/gallery/181193573/UX-Case-Study-Archdaily"
           target="_blank"
           rel="noopener noreferrer"
-          className="group/item flex flex-col justify-end w-1/4 h-full overflow-hidden bg-[url('/img/archdaily-thumb.png')] bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
-          // className="group/item flex flex-col justify-end w-1/4 h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full overflow-hidden bg-[url('/img/archdaily-thumb.png')] bg-cover md:bg-auto bg-center cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
+          // className="group/item flex flex-col justify-end w-full md:w-1/4 h-1/4 md:h-full bg-[url('/img/uid.jpeg')] bg-center overflow-hidden cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 transition-[width] hover:w-4/5 group-hover/item:w-1/5 relative"
         >
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
