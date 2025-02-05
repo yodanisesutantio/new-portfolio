@@ -359,7 +359,7 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
+              src="/img/december-2024.png"
               alt="Placeholder"
               className="pr-24 object-cover object-center h-72"
             />
@@ -401,7 +401,7 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
+              src="/img/today.png"
               alt="Placeholder"
               className="pr-24 object-cover object-center h-72"
             />

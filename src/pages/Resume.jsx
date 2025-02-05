@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 
 const Resume = () => {
@@ -7,10 +8,10 @@ const Resume = () => {
   }, []);
 
   return (
-    <section className="pt-6 pb-16 px-32 flex flex-col gap-5 grow items-center justify-center">
-      <div className="font-nunito font-normal text-lg text-[#fffbfc]/85 text-center leading-tight">
+    <section className="pt-6 pb-16 px-4 sm:px-10 lg:px-32 xl:px-44 flex flex-col gap-5 grow items-center justify-center">
+      <div className="font-nunito font-normal text-base md:text-lg 2xl:text-xl text-[#fffbfc]/85 text-center leading-tight">
         <p>
-          You have opened Yodanis' Resume, you can return by{" "}
+          You have opened Yodanis&#39; Resume, you can return by{" "}
           <a href="/" className="underline hover:no-underline">
             click here
           </a>

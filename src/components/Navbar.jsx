@@ -7,13 +7,13 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="flex justify-between items-center px-4 sm:px-10 lg:px-32 xl:px-44 py-5 lg:py-6 sticky top-0 w-full bg-[#010400] z-50 border-b border-[#fffbfc]/10">
+    <nav className="flex justify-between items-center px-4 sm:px-10 lg:px-32 xl:px-44 py-4 lg:py-6 sticky top-0 w-full bg-[#010400] z-50 border-b border-[#fffbfc]/10">
       <div className="flex items-center shrink-0">
         <Link to="/">
           <img
             src="/img/yodanisesutantio_logomark.png"
             alt="Yodanis E. Sutantio | Home"
-            className="h-9 md:h-10 xl:h-12 rounded-lg lg:hover:shadow-xl lg:hover:shadow-[#fffbfc]/15 duration-500"
+            className="h-9 md:h-10 rounded-lg lg:hover:shadow-xl lg:hover:shadow-[#fffbfc]/15 duration-500"
           />
         </Link>
       </div>
