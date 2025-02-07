@@ -24,7 +24,7 @@ const App = () => {
     if (isRiveReady) {
       setTimeout(() => {
         setIsLoading(false);
-      }, 500);
+      }, 200);
     }
   }, [isRiveReady]);
 

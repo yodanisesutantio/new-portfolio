@@ -21,7 +21,7 @@ const LoadingScreen = ({ onLoadComplete }) => {
           setIsRiveLoaded(true);
           // Notify parent component that loading can complete
           onLoadComplete();
-        }, 1200); // Minimum display time for the animation
+        }, 400); // Minimum display time for the animation
       }
     },
   });
