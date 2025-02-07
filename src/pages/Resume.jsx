@@ -12,7 +12,7 @@ const Resume = () => {
       <div className="font-nunito font-normal text-base md:text-lg 2xl:text-xl text-[#fffbfc]/85 text-center leading-tight">
         <p>
           You have opened Yodanis&#39; Resume, you can return by{" "}
-          <a href="/" className="underline hover:no-underline">
+          <a href="/" className="underline xl:hover:no-underline">
             click here
           </a>
           .

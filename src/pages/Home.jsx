@@ -360,7 +360,7 @@ const Home = () => {
 
             <img
               src="/img/december-2024.png"
-              alt="Placeholder"
+              alt="a recreation image of me completing my final assignment of college"
               className="pr-24 object-cover object-center h-72"
             />
 
@@ -402,7 +402,7 @@ const Home = () => {
 
             <img
               src="/img/today.png"
-              alt="Placeholder"
+              alt="a recreation image of what I do right now"
               className="pr-24 object-cover object-center h-72"
             />
           </div>
@@ -430,8 +430,8 @@ const Home = () => {
             </p>
 
             <img
-              src="https://picsum.photos/700/500"
-              alt="Placeholder"
+              src="/img/may-2025.png"
+              alt="a recreation image of my graduation day"
               className="pr-24 object-cover object-center h-72"
             />
           </div>
