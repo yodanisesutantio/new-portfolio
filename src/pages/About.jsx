@@ -9,9 +9,9 @@ const About = () => {
   }, []);
 
   return (
-    <section className="h-[calc(100vh-(--spacing(16)))] py-6 px-32 flex flex-col grow gap-5 items-center justify-center">
+    <section className="h-[calc(100vh-(--spacing(16)))] py-4 md:py-6 px-4 sm:px-10 lg:px-20 xl:px-32 2xl:px-44 flex flex-col grow gap-4 md:gap-5 xl:gap-6 items-center justify-center">
       <h1
-        className={`text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 ${
+        className={`text-2xl md:text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -35,25 +35,25 @@ const About = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}>
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-[#fffbfc]/85">
+            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#fffbfc]/85">
               Hello! I’m Yodanis, a curious explorer of the tech world. I’m
               navigating the boundless opportunities in this field, still
               figuring out my path. Some days I feel like a curious explorer;
               other days, I’m just hitting random buttons to see what works!
             </p>
 
-            <p className="font-nunito font-light text-base text-[#fffbfc]/85">
+            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#fffbfc]/85">
               I’ve always been inspired by a quote from Arthur Schopenhauer:{" "}
             </p>
 
-            <p className="font-nunito font-extralight text-2xl italic text-[#fffbfc]/50">
+            <p className="font-nunito font-extralight text-lg sm:text-xl md:text-2xl 2xl:text-3xl italic text-[#fffbfc]/50">
               &ldquo;Talent hits a target no one else can hit; Genius hits a
               target no one else can see.&rdquo;
             </p>
           </div>
 
           <div className="flex flex-col gap-2 items-end">
-            <p className="font-nunito font-light text-base text-[#fffbfc]/85">
+            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#fffbfc]/85">
               Here’s to aiming for targets yet unseen.
             </p>
             <img
