@@ -10,7 +10,8 @@ const FlippingCard = ({
   description,
   initialDelay = 1000, // New prop with default value
   accentColor = '#CAFE48',
-  backgroundColor = '#57467B'
+  backgroundColor = '#57467B',
+  href='#'
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -50,14 +51,14 @@ const FlippingCard = ({
   }, [isSmallScreen, initialDelay]);
 
   return (
-    <div className="relative cursor-pointer xl:transition-[width] xl:hover:w-4/5 xl:group-hover/item:w-1/5 w-full xl:w-1/4 h-full perspective-[1000] duration-700">
+    <a href={href} className="relative cursor-pointer xl:transition-[width] xl:hover:w-4/5 xl:group-hover/item:w-1/5 w-full xl:w-1/4 h-full perspective-[1000] duration-700">
       <div
         className={`relative w-full h-full transition-transform duration-700 transform-3d ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
       >
         {/* Front side */}
-        <a
+        <div
           className="absolute w-full h-full backface-hidden group/item flex flex-col justify-end bg-cover xl:bg-auto bg-center overflow-hidden rounded-sm xl:saturate-0 xl:hover:saturate-100 duration-700"
           style={{ 
             backgroundImage: `url(${backgroundImage})`,
@@ -67,19 +68,19 @@ const FlippingCard = ({
             className="absolute bottom-0 left-0 right-0 p-2 xl:p-4 transition-transform duration-700 transform translate-y-full xl:group-hover/item:translate-y-0"
             style={{ backgroundColor }}
           >
-            <div className="w-full h-full flex flex-col justify-end gap-0 xl:gap-1">
-              <p className="font-mclaren font-light text-base" style={{ color: `${accentColor}` }}>
+            <div className="w-full h-full flex flex-col justify-end gap-0 xl:gap-1 2xl:gap-2">
+              <p className="font-mclaren font-light text-base 2xl:text-lg" style={{ color: `${accentColor}` }}>
                 {year}, {category}
               </p>
-              <h2 className="font-mclaren font-bold text-2xl" style={{ color: accentColor }}>
+              <h2 className="font-mclaren font-bold text-2xl 2xl:text-3xl" style={{ color: accentColor }}>
                 {title}
               </h2>
-              <p className="font-nunito font-light text-base" style={{ color: `${accentColor}` }}>
+              <p className="font-nunito font-light text-base 2xl:text-lg" style={{ color: `${accentColor}` }}>
                 {description}
               </p>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Back side */}
         <div 
@@ -87,16 +88,16 @@ const FlippingCard = ({
           style={{ backgroundColor: backgroundColor }}
         >
           <div className="w-full h-full flex flex-col justify-center items-center gap-0 xl:gap-1 p-4">
-            <p className="font-mclaren font-light text-center text-base" style={{ color: `${accentColor}` }}>
+            <p className="font-mclaren font-light text-center text-xs sm:text-sm md:text-base" style={{ color: `${accentColor}` }}>
               {year}, {category}
             </p>
-            <h2 className="font-mclaren font-bold text-center text-2xl" style={{ color: accentColor }}>
+            <h2 className="font-mclaren font-bold text-center text-lg sm:text-xl md:text-2xl" style={{ color: accentColor }}>
               {title}
             </h2>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

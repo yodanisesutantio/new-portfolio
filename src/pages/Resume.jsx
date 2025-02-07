@@ -8,7 +8,7 @@ const Resume = () => {
   }, []);
 
   return (
-    <section className="pt-6 pb-16 px-4 sm:px-10 lg:px-32 2xl:px-44 flex flex-col gap-5 grow items-center justify-center">
+    <section className="pt-6 pb-16 px-4 sm:px-10 lg:px-32 xxl:px-44 2xl:px-56 flex flex-col gap-5 grow items-center justify-center">
       <div className="font-nunito font-normal text-base md:text-lg 2xl:text-xl text-[#fffbfc]/85 text-center leading-tight">
         <p>
           You have opened Yodanis&#39; Resume, you can return by{" "}
