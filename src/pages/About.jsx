@@ -18,9 +18,9 @@ const About = () => {
         Hi, it&rsquo;s me!
       </h1>
 
-      <div className="flex-1 w-full min-h-0 grid grid-cols-3 gap-6">
+      <div className="flex-1 w-full min-h-0 flex flex-col lg:grid lg:grid-cols-3 gap-6">
         <div
-          className={`rounded bg-[#fffbfc]/5 p-4 h-full transform transition-all duration-700 delay-[100ms] ${
+          className={`hidden lg:flex rounded bg-[#fffbfc]/5 p-4 h-full transform transition-all duration-700 delay-[100ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}
         >
@@ -31,7 +31,7 @@ const About = () => {
           />
         </div>
 
-        <div className={`rounded col-span-2 flex flex-col gap-6 justify-between h-full bg-[#fffbfc]/5 p-4 transform transition-all duration-700 delay-[200ms] ${
+        <div className={`rounded col-span-2 flex flex-col gap-6 justify-between overflow-y-auto h-full bg-[#fffbfc]/5 p-4 transform transition-all duration-700 delay-[200ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}>
           <div className="flex flex-col gap-3">
@@ -46,7 +46,7 @@ const About = () => {
               I’ve always been inspired by a quote from Arthur Schopenhauer:{" "}
             </p>
 
-            <p className="font-nunito font-extralight text-lg sm:text-xl md:text-2xl 2xl:text-3xl italic text-[#fffbfc]/50">
+            <p className="font-nunito font-extralight text-lg/tight sm:text-xl/tight md:text-2xl/snug 2xl:text-3xl/snug italic text-[#fffbfc]/50">
               &ldquo;Talent hits a target no one else can hit; Genius hits a
               target no one else can see.&rdquo;
             </p>
@@ -59,7 +59,7 @@ const About = () => {
             <img
               src="/img/yodanisesutantio_signature.png"
               alt="Yodanis E. Sutantio | Signature"
-              className="h-20"
+              className="h-14 md:h-20"
             />
           </div>
         </div>
