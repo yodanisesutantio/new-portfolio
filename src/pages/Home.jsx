@@ -38,10 +38,10 @@ const Home = () => {
   };
 
   return (
-    <section className="pt-10 pb-16 px-32 flex flex-col grow items-center justify-center">
+    <section className="py-4 md:py-6 px-4 sm:px-10 lg:px-20 xl:px-32 2xl:px-44 flex flex-col grow items-center justify-center">
       <ScrollToTopButton />
 
-      <h1 className="text-7xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
+      <h1 className="xl:text-7xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
         <span
           className={`inline-block transform transition-all duration-700 delay-[0ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
@@ -116,13 +116,13 @@ const Home = () => {
 
       {/* Animated Introduction Text */}
       <div
-        className={`mt-3 font-nunito font-light text-lg text-[#fffbfc]/75 text-center leading-tight transform transition-all duration-700 delay-[1000ms] ${
+        className={`mt-3 font-nunito font-light xl:text-lg/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1000ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
         <p>Hi, I&rsquo;m Yodanis, an IT Enthusiast with a diverse skill set.</p>
         <p>
-          Currently working on to figure out what to do in the tech world 🤭
+          Currently working on to figure out what to do in the tech world <span className="text-[#fffbfc]">🤭</span>
         </p>
       </div>
 
@@ -133,21 +133,21 @@ const Home = () => {
         }`}
       >
         <button
-          className="font-nunito font-medium text-lg cursor-pointer text-[#fffbfc]/30 px-10 py-5 hover:bg-[#fffbfc]/5 duration-500"
+          className="font-nunito font-medium xl:text-lg cursor-pointer text-[#fffbfc]/30 px-10 py-5 hover:bg-[#fffbfc]/5 duration-500"
           onClick={() => scrollToBottom(1500)}
         >
           Connect with me
         </button>
         <Link
           to="/projects"
-          className="relative font-nunito font-extrabold text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] px-10 py-5 duration-500"
+          className="font-nunito font-extrabold xl:text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] px-10 py-5 duration-500"
         >
           View Projects
         </Link>
       </div>
 
       <h1
-        className={`mt-24 text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 delay-[1400ms] ${
+        className={`w-full mt-24 xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[1400ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -155,7 +155,7 @@ const Home = () => {
       </h1>
 
       <p
-        className={`mt-2 w-96 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight transform transition-all duration-700 delay-[1600ms] ${
+        className={`mt-2 w-full lg:w-96 font-nunito font-light xl:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -164,7 +164,7 @@ const Home = () => {
       </p>
 
       <div
-        className={`mt-8 w-full grid grid-cols-2 gap-4 transform transition-all duration-700 delay-[1800ms] ${
+        className={`w-full mt-8 grid grid-cols-2 gap-4 transform transition-all duration-700 delay-[1800ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -173,10 +173,10 @@ const Home = () => {
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
-              <h2 className="font-mclaren font-bold text-2xl text-[#CAFE48]">
+              <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
                 User Interface Design
               </h2>
-              <p className="font-nunito font-light text-base text-[#CAFE48]/85">
+              <p className="font-nunito font-light xl:text-base text-[#CAFE48]/85">
                 Why only UI? While I admire the world of UX Design, I
                 haven&rsquo;t yet had the opportunity to practice it or work on
                 a project that truly immerses me in that space. UI Design feels
@@ -192,10 +192,10 @@ const Home = () => {
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
-              <h2 className="font-mclaren font-bold text-2xl text-[#CAFE48]">
+              <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
                 Web Development
               </h2>
-              <p className="font-nunito font-light text-base text-[#CAFE48]/85">
+              <p className="font-nunito font-light xl:text-base text-[#CAFE48]/85">
                 It&rsquo;s a field that excites me because the possibilities
                 feel endless. I&rsquo;ve recently started exploring frameworks
                 like Tailwind CSS and Laravel. The ability to build something
@@ -207,21 +207,21 @@ const Home = () => {
         </div>
       </div>
 
-      <h1 className="mt-24 text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
+      <h1 className="w-full mt-24 xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
         My Journey so far
       </h1>
-      <p className="mt-2 w-96 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight">
+      <p className="mt-2 w-full lg:w-96 font-nunito font-light xl:text-base/tight text-[#fffbfc]/75 text-center">
         Come along as I share the steps that brought me here, one chapter at a
         time.
       </p>
 
-      <div className="relative flex flex-col gap-16 justify-center items-center mt-8">
+      <div className="relative flex flex-col gap-16 justify-center items-center mt-8 w-full">
         <div className="absolute top-2 transform bg-linear-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
 
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               July, 2002
             </h2>
           </div>
@@ -233,7 +233,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               I was born in July 2002, a curious child eager to explore the
               world around me.
             </p>
@@ -249,7 +249,7 @@ const Home = () => {
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               January, 2007
             </h2>
           </div>
@@ -261,7 +261,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               I moved from Surabaya to the neighboring town of Sidoarjo. I
               didn’t fully understand my feelings about the change, but I
               learned to adapt and make do with my new surroundings.
@@ -278,7 +278,7 @@ const Home = () => {
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               July, 2017
             </h2>
           </div>
@@ -290,7 +290,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               My high school years began in July 2017. By my second year, I
               focused on my Multimedia major, sharpening my video production
               skills and discovering my passion for UI/UX Design.
@@ -307,7 +307,7 @@ const Home = () => {
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               September, 2020
             </h2>
           </div>
@@ -319,7 +319,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               Despite the global pandemic, September 2020 marked the start of my
               college journey as an Information Systems student.
             </p>
@@ -330,7 +330,7 @@ const Home = () => {
               className="pr-24 object-cover object-center h-72"
             />
 
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               I honed my UI/UX knowledge and, along the way, stumbled upon Web
               Development—a discovery that opened up exciting new possibilities.
             </p>
@@ -340,7 +340,7 @@ const Home = () => {
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               December, 2024
             </h2>
           </div>
@@ -352,7 +352,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               This marked the end of my educational journey with the submission
               of my final assignment—a web-based app for a driving school using
               the incremental model.
@@ -364,7 +364,7 @@ const Home = () => {
               className="pr-24 object-cover object-center h-72"
             />
 
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               You can find more details on this project on my{" "}
               <Link
                 to="/projects"
@@ -381,7 +381,7 @@ const Home = () => {
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               Today
             </h2>
           </div>
@@ -393,7 +393,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               As of today, I’m open to new opportunities and challenges, with a
               dream of working abroad—perhaps Germany? The chance to grow my
               skills while exploring new cultures excites me, and I’m ready for
@@ -411,7 +411,7 @@ const Home = () => {
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
           {/* Date */}
           <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium text-2xl text-right text-[#fffbfc]">
+            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
               May, 2025
             </h2>
           </div>
@@ -423,7 +423,7 @@ const Home = () => {
 
           {/* Content */}
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
               I’ll be attending my graduation and officially earning my
               bachelor’s degree. It’s a proud milestone that closes one chapter
               while opening doors to new adventures.
@@ -443,15 +443,15 @@ const Home = () => {
       </div>
 
       <div className="mt-20 w-full">
-        <h1 className="text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug">
+        <h1 className="xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
           Meet me in digital space!
         </h1>
-        <p className="mt-2 font-nunito font-light text-base text-[#fffbfc]/75 text-center leading-tight">
+        <p className="mt-2 font-nunito font-light xl:text-base/tight text-[#fffbfc]/75 text-center">
           Find me on my social accounts below - I&rsquo;m always happy to chat
           and share ideas.
         </p>
 
-        <div className="mt-12 px-60 flex flex-row items-center justify-between">
+        <div className="mt-12 px-4 lg:px-60 flex flex-row items-center justify-between w-full">
           {/* Github */}
           <a href="https://github.com/yodanisesutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
             <svg
@@ -468,7 +468,7 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanisesutantio</p>
+            <p className="font-nunito xl:text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanisesutantio</p>
           </a>
 
           {/* LinkedIn */}
@@ -487,7 +487,7 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito text-lg font-normal text-[#fffbfc] whitespace-nowrap">/in/yodanis-e-sutantio</p>
+            <p className="font-nunito xl:text-lg font-normal text-[#fffbfc] whitespace-nowrap">/in/yodanis-e-sutantio</p>
           </a>
 
           {/* Behance */}
@@ -506,7 +506,7 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanis-e-sutantio</p>
+            <p className="font-nunito xl:text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanis-e-sutantio</p>
           </a>
         </div>
       </div>

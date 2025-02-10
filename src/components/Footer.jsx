@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
-    <div className="flex justify-center sm:justify-between items-center p-2">
+    <div className="w-full flex justify-center sm:justify-between items-center p-2">
       <p className="text-xs md:text-sm 2xl:text-base font-normal font-nunito text-[#fffbfc]/40">
         © {currentYear} Portfolio by Yodanis E. Sutantio
       </p>
