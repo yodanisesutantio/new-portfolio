@@ -47,7 +47,7 @@ const FlippingCard = ({
 
   return (
     <div
-      className="relative cursor-pointer xl:transition-[width] xl:hover:w-4/5 xl:group-hover/item:w-1/5 w-full xl:w-1/4 h-full perspective-[1000] duration-700"
+      className="relative cursor-pointer w-full h-full perspective-[1000] duration-700"
     >
       <div
         className={`relative w-full h-full transition-transform duration-700 transform-3d ${

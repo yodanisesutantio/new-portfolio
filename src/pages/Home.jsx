@@ -425,7 +425,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-20 px-0 lg:px-24 w-full">
+      <div className="mt-14 lg:mt-20 px-0 lg:px-24 w-full">
         <Quotes />
       </div>
 
@@ -438,12 +438,12 @@ const Home = () => {
           and share ideas.
         </p>
 
-        <div className="mt-12 px-4 lg:px-60 flex flex-row items-center justify-between w-full">
+        <div className="mt-6 sm:mt-10 md:mt-8 px-4 lg:px-60 flex flex-col md:flex-row items-center justify-center lg:justify-between gap-6 w-full">
           {/* Github */}
-          <a href="https://github.com/yodanisesutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
+          <a href="https://github.com/yodanisesutantio" className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -455,14 +455,14 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito xl:text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanisesutantio</p>
+            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">/yodanisesutantio</p>
           </a>
 
           {/* LinkedIn */}
-          <a href="https://www.linkedin.com/in/yodanis-e-sutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
+          <a href="https://www.linkedin.com/in/yodanis-e-sutantio" className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -474,14 +474,14 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito xl:text-lg font-normal text-[#fffbfc] whitespace-nowrap">/in/yodanis-e-sutantio</p>
+            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">/in/yodanis-e-sutantio</p>
           </a>
 
           {/* Behance */}
-          <a href="https://www.behance.net/yodanis-e-sutantio" className="w-24 h-24 cursor-pointer bg-none flex flex-col items-center justify-center gap-2 group">
+          <a href="https://www.behance.net/yodanis-e-sutantio" className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-0 lg:gap-2 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -493,7 +493,7 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito xl:text-lg font-normal text-[#fffbfc] whitespace-nowrap">/yodanis-e-sutantio</p>
+            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">/yodanis-e-sutantio</p>
           </a>
         </div>
       </div>
