@@ -141,7 +141,7 @@ const Home = () => {
         </button>
         <Link
           to="/projects"
-          className="font-nunito font-extrabold text-sm/snug sm:text-base/snug md:text-lg/tight text-center cursor-pointer text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] w-full md:w-fit md:px-10 py-3 duration-500"
+          className="font-nunito font-extrabold text-sm/snug sm:text-base/snug md:text-lg/tight text-center cursor-pointer text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] w-full md:w-fit md:px-10 py-3 md:py-5 duration-500"
         >
           View Projects
         </Link>
@@ -170,7 +170,7 @@ const Home = () => {
         }`}
       >
         {/* UI Design Card */}
-        <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
+        {/* <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
@@ -185,8 +185,8 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
-        {/* <FlippingCard
+        </div> */}
+        <FlippingCard
           backgroundImage="/img/si-logo-thumb.png"
           title="User Interface Design"
           description="Why only UI? While I admire the world of UX Design, I
@@ -194,12 +194,11 @@ const Home = () => {
                 a project that truly immerses me in that space. UI Design feels
                 like a natural starting point, and I&rsquo;m excited to build a
                 strong foundation before diving deeper into UX."
-          initialDelay={1000}
-        /> */}
+          initialDelay={5000}
+        />
 
         {/* Web Development Card */}
-        <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
-          {/* Content */}
+        {/* <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
@@ -214,7 +213,17 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
+        <FlippingCard
+          backgroundImage="/img/webdev.png"
+          title="Web Development"
+          description="It&rsquo;s a field that excites me because the possibilities
+                feel endless. I&rsquo;ve recently started exploring frameworks
+                like Tailwind CSS and Laravel. The ability to build something
+                tangible—not just daydream about it, but see it come to life
+                right in front of my eyes—is truly indescribable."
+          initialDelay={5200}
+        />
       </div>
 
       <h1 className="w-full mt-12 xl:mt-24 text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
@@ -225,7 +234,7 @@ const Home = () => {
         time.
       </p>
 
-      <div className="relative flex flex-col gap-16 justify-center items-center mt-8 w-full">
+      <div className="relative flex flex-col gap-16 justify-center items-center mt-6 md:mt-8 w-full">
         <div className="absolute top-2 transform bg-linear-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
 
         <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">

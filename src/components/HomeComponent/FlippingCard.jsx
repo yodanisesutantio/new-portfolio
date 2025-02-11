@@ -1,17 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const FlippingCard = ({ 
+const FlippingCard = ({
   backgroundImage,
-  year,
-  category,
   title,
   description,
   initialDelay = 1000, // New prop with default value
-  accentColor = '#CAFE48',
-  backgroundColor = '#57467B',
-  href='#'
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -22,8 +17,8 @@ const FlippingCard = ({
     };
 
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   useEffect(() => {
@@ -34,10 +29,10 @@ const FlippingCard = ({
       // Initial flip with custom delay
       initialDelayTimer = setTimeout(() => {
         setIsFlipped(true);
-        
+
         // Start the regular interval after the first flip
         interval = setInterval(() => {
-          setIsFlipped(prev => !prev);
+          setIsFlipped((prev) => !prev);
         }, 4000); // 3s display + 1s transition
       }, initialDelay);
     } else {
@@ -51,31 +46,27 @@ const FlippingCard = ({
   }, [isSmallScreen, initialDelay]);
 
   return (
-    <a href={href} className="relative cursor-pointer xl:transition-[width] xl:hover:w-4/5 xl:group-hover/item:w-1/5 w-full xl:w-1/4 h-full perspective-[1000] duration-700">
+    <div
+      className="relative cursor-pointer xl:transition-[width] xl:hover:w-4/5 xl:group-hover/item:w-1/5 w-full xl:w-1/4 h-full perspective-[1000] duration-700"
+    >
       <div
         className={`relative w-full h-full transition-transform duration-700 transform-3d ${
-          isFlipped ? 'rotate-y-180' : ''
+          isFlipped ? "rotate-y-180" : ""
         }`}
       >
         {/* Front side */}
         <div
-          className="absolute w-full h-full backface-hidden group/item flex flex-col justify-end bg-cover xl:bg-auto bg-center overflow-hidden rounded-sm xl:saturate-0 xl:hover:saturate-100 duration-700"
-          style={{ 
+          className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] backface-hidden overflow-hidden bg-cover xl:bg-auto bg-center xl:bg-bottom cursor-pointer rounded-sm lg:saturate-0 lg:hover:saturate-100 duration-700 relative"
+          style={{
             backgroundImage: `url(${backgroundImage})`,
           }}
         >
-          <div 
-            className="absolute bottom-0 left-0 right-0 p-2 xl:p-4 transition-transform duration-700 transform translate-y-full xl:group-hover/item:translate-y-0"
-            style={{ backgroundColor }}
-          >
-            <div className="w-full h-full flex flex-col justify-end gap-0 xl:gap-1 2xl:gap-2">
-              <p className="font-mclaren font-light text-base 2xl:text-lg" style={{ color: `${accentColor}` }}>
-                {year}, {category}
-              </p>
-              <h2 className="font-mclaren font-bold text-2xl 2xl:text-3xl" style={{ color: accentColor }}>
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
+            <div className="w-full h-full flex flex-col justify-end gap-1">
+              <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
                 {title}
               </h2>
-              <p className="font-nunito font-light text-base 2xl:text-lg" style={{ color: `${accentColor}` }}>
+              <p className="font-nunito font-light xl:text-base text-[#CAFE48]/85">
                 {description}
               </p>
             </div>
@@ -83,21 +74,18 @@ const FlippingCard = ({
         </div>
 
         {/* Back side */}
-        <div 
-          className="absolute w-full h-full backface-hidden rotate-y-180 rounded-sm"
-          style={{ backgroundColor: backgroundColor }}
-        >
-          <div className="w-full h-full flex flex-col justify-center items-center gap-0 xl:gap-1 p-4">
-            <p className="font-mclaren font-light text-center text-xs sm:text-sm md:text-base" style={{ color: `${accentColor}` }}>
-              {year}, {category}
-            </p>
-            <h2 className="font-mclaren font-bold text-center text-lg sm:text-xl md:text-2xl" style={{ color: accentColor }}>
+        <div className="absolute top-0 w-full h-52 xl:h-[22rem] backface-hidden rotate-y-180 rounded-sm bg-[#57467B]">
+          <div className="w-full h-full flex flex-col justify-center items-center gap-1 p-4">
+            <h2 className="font-mclaren font-bold text-lg sm:text-xl md:text-2xl text-[#CAFE48]">
               {title}
             </h2>
+            <p className="font-nunito font-light text-sm/snug sm:text-base/snug text-[#CAFE48]/85">
+              {description}
+            </p>
           </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 
