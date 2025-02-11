@@ -33,7 +33,7 @@ const FlippingCard = ({
         // Start the regular interval after the first flip
         interval = setInterval(() => {
           setIsFlipped((prev) => !prev);
-        }, 4000); // 3s display + 1s transition
+        }, 7000); // 6s display + 1s transition
       }, initialDelay);
     } else {
       setIsFlipped(false);

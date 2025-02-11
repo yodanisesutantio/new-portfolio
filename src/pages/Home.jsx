@@ -156,7 +156,7 @@ const Home = () => {
       </h1>
 
       <p
-        className={`mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
+        className={`mt-1.5 md:mt-1.5 md:mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -170,22 +170,6 @@ const Home = () => {
         }`}
       >
         {/* UI Design Card */}
-        {/* <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
-            <div className="w-full h-full flex flex-col justify-end gap-1">
-              <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
-                User Interface Design
-              </h2>
-              <p className="font-nunito font-light xl:text-base text-[#CAFE48]/85">
-                Why only UI? While I admire the world of UX Design, I
-                haven&rsquo;t yet had the opportunity to practice it or work on
-                a project that truly immerses me in that space. UI Design feels
-                like a natural starting point, and I&rsquo;m excited to build a
-                strong foundation before diving deeper into UX.
-              </p>
-            </div>
-          </div>
-        </div> */}
         <FlippingCard
           backgroundImage="/img/si-logo-thumb.png"
           title="User Interface Design"
@@ -198,22 +182,6 @@ const Home = () => {
         />
 
         {/* Web Development Card */}
-        {/* <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
-            <div className="w-full h-full flex flex-col justify-end gap-1">
-              <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
-                Web Development
-              </h2>
-              <p className="font-nunito font-light xl:text-base text-[#CAFE48]/85">
-                It&rsquo;s a field that excites me because the possibilities
-                feel endless. I&rsquo;ve recently started exploring frameworks
-                like Tailwind CSS and Laravel. The ability to build something
-                tangible—not just daydream about it, but see it come to life
-                right in front of my eyes—is truly indescribable.
-              </p>
-            </div>
-          </div>
-        </div> */}
         <FlippingCard
           backgroundImage="/img/webdev.png"
           title="Web Development"
@@ -229,7 +197,7 @@ const Home = () => {
       <h1 className="w-full mt-12 xl:mt-24 text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
         My Journey so far
       </h1>
-      <p className="mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
+      <p className="mt-1.5 md:mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
         Come along as I share the steps that brought me here, one chapter at a
         time.
       </p>
