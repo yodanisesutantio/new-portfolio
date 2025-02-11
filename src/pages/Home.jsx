@@ -156,7 +156,7 @@ const Home = () => {
       </h1>
 
       <p
-        className={`mt-1.5 md:mt-1.5 md:mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
+        className={`mt-1.5 md:mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -425,7 +425,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-20 px-24 w-full">
+      <div className="mt-20 px-0 lg:px-24 w-full">
         <Quotes />
       </div>
 
@@ -433,7 +433,7 @@ const Home = () => {
         <h1 className="text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
           Meet me in digital space!
         </h1>
-        <p className="mt-2 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
+        <p className="mt-1.5 md:mt-2 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
           Find me on my social accounts below - I&rsquo;m always happy to chat
           and share ideas.
         </p>
