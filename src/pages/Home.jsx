@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Quotes from "../components/HomeComponent/Quotes";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import FlippingCard from "../components/HomeComponent/FlippingCard";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,7 +42,7 @@ const Home = () => {
     <section className="py-4 md:py-6 px-4 sm:px-10 lg:px-20 xl:px-32 2xl:px-44 flex flex-col grow items-center justify-center">
       <ScrollToTopButton />
 
-      <h1 className="xl:text-7xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
+      <h1 className="text-4xl/snug xl:text-7xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
         <span
           className={`inline-block transform transition-all duration-700 delay-[0ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
@@ -116,7 +117,7 @@ const Home = () => {
 
       {/* Animated Introduction Text */}
       <div
-        className={`mt-3 font-nunito font-light xl:text-lg/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1000ms] ${
+        className={`mt-3 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1000ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -128,26 +129,26 @@ const Home = () => {
 
       {/* Animated Buttons */}
       <div
-        className={`flex flex-row gap-6 items-center justify-center mt-6 transform transition-all duration-700 delay-[1200ms] ${
+        className={`flex flex-col-reverse md:flex-row gap-4 md:gap-6 w-full items-center justify-center mt-6 px-4 transform transition-all duration-700 delay-[1200ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
         <button
-          className="font-nunito font-medium xl:text-lg cursor-pointer text-[#fffbfc]/30 px-10 py-5 hover:bg-[#fffbfc]/5 duration-500"
+          className="font-nunito font-medium text-sm/snug sm:text-base/snug md:text-lg/tight text-center cursor-pointer text-[#fffbfc]/30 w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#fffbfc]/5 duration-500"
           onClick={() => scrollToBottom(1500)}
         >
           Connect with me
         </button>
         <Link
           to="/projects"
-          className="font-nunito font-extrabold xl:text-lg text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] px-10 py-5 duration-500"
+          className="font-nunito font-extrabold text-sm/snug sm:text-base/snug md:text-lg/tight text-center cursor-pointer text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] w-full md:w-fit md:px-10 py-3 duration-500"
         >
           View Projects
         </Link>
       </div>
 
       <h1
-        className={`w-full mt-24 xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[1400ms] ${
+        className={`w-full mt-12 xl:mt-24 text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[1400ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -155,7 +156,7 @@ const Home = () => {
       </h1>
 
       <p
-        className={`mt-2 w-full lg:w-96 font-nunito font-light xl:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
+        className={`mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -164,13 +165,12 @@ const Home = () => {
       </p>
 
       <div
-        className={`w-full mt-8 grid grid-cols-2 gap-4 transform transition-all duration-700 delay-[1800ms] ${
+        className={`w-full mt-6 md:mt-8 flex flex-col md:grid md:grid-cols-2 gap-4 transform transition-all duration-700 delay-[1800ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
         {/* UI Design Card */}
-        <div className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
-          {/* Content */}
+        <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/si-logo-thumb.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
               <h2 className="font-mclaren font-bold xl:text-2xl text-[#CAFE48]">
@@ -186,9 +186,19 @@ const Home = () => {
             </div>
           </div>
         </div>
+        {/* <FlippingCard
+          backgroundImage="/img/si-logo-thumb.png"
+          title="User Interface Design"
+          description="Why only UI? While I admire the world of UX Design, I
+                haven&rsquo;t yet had the opportunity to practice it or work on
+                a project that truly immerses me in that space. UI Design feels
+                like a natural starting point, and I&rsquo;m excited to build a
+                strong foundation before diving deeper into UX."
+          initialDelay={1000}
+        /> */}
 
         {/* Web Development Card */}
-        <div className="group/item flex flex-col justify-end w-full h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
+        <div className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] overflow-hidden bg-[url('/img/webdev.png')] bg-bottom cursor-pointer rounded-sm saturate-0 hover:saturate-100 duration-700 relative">
           {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#57467B] transition-transform duration-700 transform translate-y-full group-hover/item:translate-y-0">
             <div className="w-full h-full flex flex-col justify-end gap-1">
@@ -207,10 +217,10 @@ const Home = () => {
         </div>
       </div>
 
-      <h1 className="w-full mt-24 xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
+      <h1 className="w-full mt-12 xl:mt-24 text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
         My Journey so far
       </h1>
-      <p className="mt-2 w-full lg:w-96 font-nunito font-light xl:text-base/tight text-[#fffbfc]/75 text-center">
+      <p className="mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
         Come along as I share the steps that brought me here, one chapter at a
         time.
       </p>
@@ -442,11 +452,11 @@ const Home = () => {
         <Quotes />
       </div>
 
-      <div className="mt-20 w-full">
-        <h1 className="xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
+      <div className="mt-12 xl:mt-24 w-full">
+        <h1 className="text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
           Meet me in digital space!
         </h1>
-        <p className="mt-2 font-nunito font-light xl:text-base/tight text-[#fffbfc]/75 text-center">
+        <p className="mt-2 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
           Find me on my social accounts below - I&rsquo;m always happy to chat
           and share ideas.
         </p>

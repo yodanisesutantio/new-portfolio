@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const About = () => {
+  // A function to create a fade in motion from bottom to top, you'll see "isVisible" function every so often in the className
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -9,6 +10,7 @@ const About = () => {
   }, []);
 
   return (
+    // The h-[calc...] is to make sure that the section doesn't exceed its height more than the total combined height of navbar and footer, making the page fit into a small device without scrolling up and down
     <section className="h-[calc(100vh-(--spacing(16)))] py-4 md:py-6 px-4 sm:px-10 lg:px-20 xl:px-32 2xl:px-44 flex flex-col grow gap-4 md:gap-5 xl:gap-6 items-center justify-center">
       <h1
         className={`text-2xl md:text-4xl font-mclaren font-bold text-[#fffbfc] text-center leading-snug transform transition-all duration-700 ${
@@ -19,6 +21,7 @@ const About = () => {
       </h1>
 
       <div className="flex-1 w-full min-h-0 flex flex-col lg:grid lg:grid-cols-3 gap-6">
+        {/* Mugshot wrapper, hidden in a screen with less width than 1024px */}
         <div
           className={`hidden lg:flex rounded bg-[#fffbfc]/5 p-4 h-full transform transition-all duration-700 delay-[100ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"

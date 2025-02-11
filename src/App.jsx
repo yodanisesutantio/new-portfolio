@@ -2,7 +2,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import LoadingScreen from './components/LoadingScreen';
-import RivePreview from "./components/RivePreview";
+import RivePreview from "./components/3DComponent/RivePreview";
 
 // Import your components using React.lazy
 const Navbar = React.lazy(() => import('./components/Navbar'));
