@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import FlippingCard from "../components/FlippingCard";
+import FlippingCard from "../components/ProjectsComponent/FlippingCard";
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);

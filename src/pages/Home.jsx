@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Quotes from "../components/Quotes";
+import Quotes from "../components/HomeComponent/Quotes";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const Home = () => {
