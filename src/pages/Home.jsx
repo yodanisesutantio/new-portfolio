@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Quotes from "../components/HomeComponent/Quotes";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import FlippingCard from "../components/HomeComponent/FlippingCard";
+import AnimatedText from "../components/HomeComponent/AnimatedText";
+import TimelineEntry from "../components/HomeComponent/TimelineEntry";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,76 +45,7 @@ const Home = () => {
       <ScrollToTopButton />
 
       <h1 className="text-4xl/snug xl:text-7xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[0ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          I&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[100ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          do&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[200ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          Design&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[300ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          during&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[400ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          the&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[500ms] text-[#CAFE48] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          Day&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[600ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          then&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[700ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          Code&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[800ms] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          at&nbsp;
-        </span>
-        <span
-          className={`inline-block transform transition-all duration-700 delay-[900ms] text-[#57467B] ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
-          }`}
-        >
-          Night
-        </span>
+        <AnimatedText isVisible={isVisible} />
       </h1>
 
       {/* Animated Introduction Text */}
@@ -123,7 +56,8 @@ const Home = () => {
       >
         <p>Hi, I&rsquo;m Yodanis, an IT Enthusiast with a diverse skill set.</p>
         <p>
-          Currently working on to figure out what to do in the tech world <span className="text-[#fffbfc]">🤭</span>
+          Currently working on to figure out what to do in the tech world{" "}
+          <span className="text-[#fffbfc]">🤭</span>
         </p>
       </div>
 
@@ -205,153 +139,50 @@ const Home = () => {
       <div className="relative flex flex-col gap-16 justify-center items-center mt-6 md:mt-8 w-full">
         <div className="absolute top-2 transform bg-linear-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
 
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              July, 2002
-            </h2>
-          </div>
+        <TimelineEntry
+          date="July, 2002"
+          content="I was born in July 2002, a curious child eager to explore the world around me."
+          imageSrc="/img/july-2002.png"
+          imageAlt="a recreated image of the moment when I was born, July 2002"
+        />
 
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              I was born in July 2002, a curious child eager to explore the
-              world around me.
-            </p>
-
-            <img
-              src="/img/july-2002.png"
-              alt="a recreated image of the moment when I was born, July 2002"
-              className="pr-24 object-cover object-center h-72"
-            />
-          </div>
-        </div>
-
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              January, 2007
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              I moved from Surabaya to the neighboring town of Sidoarjo. I
+        <TimelineEntry
+          date="January, 2007"
+          content="I moved from Surabaya to the neighboring town of Sidoarjo. I
               didn’t fully understand my feelings about the change, but I
-              learned to adapt and make do with my new surroundings.
-            </p>
+              learned to adapt and make do with my new surroundings."
+          imageSrc="/img/january-2007.png"
+          imageAlt="a recreated image of the day I was moved to a new house, January 2007"
+        />
 
-            <img
-              src="/img/january-2007.png"
-              alt="a recreated image of the day I was moved to a new house, January 2007"
-              className="pr-24 object-cover object-center h-72"
-            />
-          </div>
-        </div>
-
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              July, 2017
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              My high school years began in July 2017. By my second year, I
+        <TimelineEntry
+          date="July, 2017"
+          content="My high school years began in July 2017. By my second year, I
               focused on my Multimedia major, sharpening my video production
-              skills and discovering my passion for UI/UX Design.
-            </p>
+              skills and discovering my passion for UI/UX Design."
+          imageSrc="/img/july-2017.png"
+          imageAlt="a recreation image of myself alone in a computer laboratory learning more about my major"
+        />
 
-            <img
-              src="/img/july-2017.png"
-              alt="a recreation image of myself alone in a computer laboratory learning more about my major"
-              className="pr-24 object-cover object-center h-72"
-            />
-          </div>
-        </div>
+        <TimelineEntry
+          date="September, 2020"
+          content="Despite the global pandemic, September 2020 marked the start of my
+              college journey as an Information Systems student."
+          imageSrc="/img/september-2020.png"
+          imageAlt="a recreation image of my bedroom with my laptop currently in an online meeting class in the midst of 2020 pandemic"
+          additionalContent="I honed my UI/UX knowledge and, along the way, stumbled upon Web
+              Development—a discovery that opened up exciting new possibilities."
+        />
 
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              September, 2020
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              Despite the global pandemic, September 2020 marked the start of my
-              college journey as an Information Systems student.
-            </p>
-
-            <img
-              src="/img/september-2020.png"
-              alt="a recreation image of my bedroom with my laptop currently in an online meeting class in the midst of 2020 pandemic"
-              className="pr-24 object-cover object-center h-72"
-            />
-
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              I honed my UI/UX knowledge and, along the way, stumbled upon Web
-              Development—a discovery that opened up exciting new possibilities.
-            </p>
-          </div>
-        </div>
-
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              December, 2024
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              This marked the end of my educational journey with the submission
+        <TimelineEntry
+          date="December, 2024"
+          content="This marked the end of my educational journey with the submission
               of my final assignment—a web-based app for a driving school using
-              the incremental model.
-            </p>
-
-            <img
-              src="/img/december-2024.png"
-              alt="a recreation image of me completing my final assignment of college"
-              className="pr-24 object-cover object-center h-72"
-            />
-
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+              the incremental model."
+          imageSrc="/img/december-2024.png"
+          imageAlt="a recreation image of me completing my final assignment of college"
+          additionalContent={
+            <>
               You can find more details on this project on my{" "}
               <Link
                 to="/projects"
@@ -361,68 +192,28 @@ const Home = () => {
               </Link>{" "}
               page. While this was a milestone, my journey is far from over, as
               I continue exploring what’s next.
-            </p>
-          </div>
-        </div>
+            </>
+          }
+        />
 
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              Today
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              As of today, I’m open to new opportunities and challenges, with a
+        <TimelineEntry
+          date="Today"
+          content="As of today, I’m open to new opportunities and challenges, with a
               dream of working abroad—perhaps Germany? The chance to grow my
               skills while exploring new cultures excites me, and I’m ready for
-              whatever comes next.
-            </p>
+              whatever comes next."
+          imageSrc="/img/today.png"
+          imageAlt="a recreation image of what I do right now"
+        />
 
-            <img
-              src="/img/today.png"
-              alt="a recreation image of what I do right now"
-              className="pr-24 object-cover object-center h-72"
-            />
-          </div>
-        </div>
-
-        <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
-          {/* Date */}
-          <div className="flex justify-end items-stretch">
-            <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
-              May, 2025
-            </h2>
-          </div>
-
-          {/* Middle Dots */}
-          <div className="flex justify-center pt-2">
-            <div className="rounded-full w-4 h-4 bg-[#010400] border-2 border-[#fffbfc]"></div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
-              I’ll be attending my graduation and officially earning my
+        <TimelineEntry
+          date="May, 2025"
+          content="I’ll be attending my graduation and officially earning my
               bachelor’s degree. It’s a proud milestone that closes one chapter
-              while opening doors to new adventures.
-            </p>
-
-            <img
-              src="/img/may-2025.png"
-              alt="a recreation image of my graduation day"
-              className="pr-24 object-cover object-center h-72"
-            />
-          </div>
-        </div>
+              while opening doors to new adventures."
+          imageSrc="/img/may-2025.png"
+          imageAlt="a recreation image of my graduation day"
+        />
       </div>
 
       <div className="mt-14 lg:mt-20 px-0 lg:px-24 w-full">
@@ -440,7 +231,10 @@ const Home = () => {
 
         <div className="mt-6 sm:mt-10 md:mt-8 px-4 lg:px-60 flex flex-col md:flex-row items-center justify-center lg:justify-between gap-6 w-full">
           {/* Github */}
-          <a href="https://github.com/yodanisesutantio" className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group">
+          <a
+            href="https://github.com/yodanisesutantio"
+            className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
@@ -455,11 +249,16 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">/yodanisesutantio</p>
+            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">
+              /yodanisesutantio
+            </p>
           </a>
 
           {/* LinkedIn */}
-          <a href="https://www.linkedin.com/in/yodanis-e-sutantio" className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group">
+          <a
+            href="https://www.linkedin.com/in/yodanis-e-sutantio"
+            className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
@@ -474,11 +273,16 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">/in/yodanis-e-sutantio</p>
+            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">
+              /in/yodanis-e-sutantio
+            </p>
           </a>
 
           {/* Behance */}
-          <a href="https://www.behance.net/yodanis-e-sutantio" className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-0 lg:gap-2 group">
+          <a
+            href="https://www.behance.net/yodanis-e-sutantio"
+            className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-0 lg:gap-2 group"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
@@ -493,7 +297,9 @@ const Home = () => {
               />
             </svg>
 
-            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">/yodanis-e-sutantio</p>
+            <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">
+              /yodanis-e-sutantio
+            </p>
           </a>
         </div>
       </div>
