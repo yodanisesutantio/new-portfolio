@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const TimelineEntry = ({
   date,
@@ -9,12 +9,40 @@ const TimelineEntry = ({
   imageAlt,
   additionalContent,
 }) => {
-  // Parse the date and compare with today
-  const isDateInFuture = () => {
-    const entryDate = new Date(date);
-    const today = new Date();
-    return entryDate > today;
-  };
+    const lineRef = useRef(null);
+    const isDateInFuture = () => {
+      const entryDate = new Date(date);
+      const today = new Date();
+      return entryDate > today;
+    };
+  
+    useEffect(() => {
+      const updateGradient = () => {
+        if (!lineRef.current) return;
+        
+        const rect = lineRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const lineHeight = rect.height;
+        
+        // Calculate the position of the line relative to the viewport
+        const scrollProgress = (windowHeight - rect.top) / (windowHeight + lineHeight);
+        const clampedProgress = Math.max(0, Math.min(1, scrollProgress));
+        
+        // Update the gradient position based on scroll
+        lineRef.current.style.background = `linear-gradient(
+          to bottom,
+          #ff0000 ${clampedProgress * 33}%,
+          #ff00ff ${clampedProgress * 66}%,
+          #0000ff ${clampedProgress * 100}%,
+          #2c2c2c ${clampedProgress * 100}%
+        )`;
+      };
+  
+      window.addEventListener('scroll', updateGradient);
+      updateGradient(); // Initial call
+  
+      return () => window.removeEventListener('scroll', updateGradient);
+    }, []);
 
   return (
     <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
