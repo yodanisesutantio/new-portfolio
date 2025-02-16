@@ -53,7 +53,7 @@ const TimelineEntry = ({
         </h2>
       </div>
 
-      {/* Middle Dots */}
+      {/* Dot only - no line */}
       <div className="flex justify-center pt-2">
         <div className={`rounded-full w-4 h-4 ${
           isDateInFuture() 
@@ -73,9 +73,9 @@ const TimelineEntry = ({
           className="pr-24 object-cover object-center h-72"
         />
         {additionalContent && (
-          <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+          <div className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
             {additionalContent}
-          </p>
+          </div>
         )}
       </div>
     </div>

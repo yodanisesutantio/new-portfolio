@@ -6,6 +6,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import FlippingCard from "../components/HomeComponent/FlippingCard";
 import AnimatedText from "../components/HomeComponent/AnimatedText";
 import TimelineEntry from "../components/HomeComponent/TimelineEntry";
+import TimelineContainer from "../components/HomeComponent/TimelineContainer";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -136,9 +137,7 @@ const Home = () => {
         time.
       </p>
 
-      <div className="relative flex flex-col gap-16 justify-center items-center mt-6 md:mt-8 w-full">
-        <div className="absolute top-2 transform bg-linear-to-b from-[#555253] via-90% via-[#555253] to-95% to-[#555253]/5 w-[2px] h-full"></div>
-
+      <TimelineContainer>
         <TimelineEntry
           date="July, 2002"
           content="I was born in July 2002, a curious child eager to explore the world around me."
@@ -214,7 +213,7 @@ const Home = () => {
           imageSrc="/img/may-2025.png"
           imageAlt="a recreation image of my graduation day"
         />
-      </div>
+      </TimelineContainer>
 
       <div className="mt-14 lg:mt-20 px-0 lg:px-24 w-full">
         <Quotes />
