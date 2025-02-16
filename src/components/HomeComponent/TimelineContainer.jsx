@@ -13,9 +13,9 @@ const TimelineContainer = ({ children }) => {
         className="absolute top-2 w-[2px] h-full -z-10"
         style={{
           WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 96%, rgba(0, 0, 0, 0) 100%)",
+            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%)",
           maskImage:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 96%, rgba(0, 0, 0, 0) 100%)",
+            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%)",
           backgroundColor: "#2c2c2c",
         }}
       >

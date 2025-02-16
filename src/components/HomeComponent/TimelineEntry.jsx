@@ -9,14 +9,42 @@ const TimelineEntry = ({
   imageAlt,
   additionalContent,
 }) => {
-    const isDateInFuture = () => {
-      const entryDate = new Date(date);
-      const today = new Date();
-      return entryDate > today;
+  const entryRef = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+  const [isPastView, setIsPastView] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!entryRef.current) return;
+
+      const rect = entryRef.current.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      // When entry is visible in viewport (fade in)
+      const inView = rect.top < viewportHeight * 0.7 && rect.bottom > viewportHeight * 0.4;
+      setIsInView(inView);
+
+      // Keep opacity-100 when scrolled past
+      setIsPastView(rect.top < viewportHeight * 0.4);
     };
 
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on mount
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="relative grid grid-cols-[1fr_2.5rem_1fr] gap-5">
+    <div
+      ref={entryRef}
+      className={`relative grid grid-cols-[1fr_2.5rem_1fr] gap-5 transition-all duration-300 ${
+        isPastView
+          ? "opacity-100 saturate-100" // If past the top of viewport, keep it full opacity
+          : isInView
+          ? "opacity-100 saturate-100" // When in view, make it visible
+          : "opacity-25 saturate-0" // Otherwise, keep it faded
+      }`}
+    >
       {/* Date */}
       <div className="flex justify-end items-stretch">
         <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
@@ -26,11 +54,13 @@ const TimelineEntry = ({
 
       {/* Dot only - no line */}
       <div className="flex justify-center pt-2">
-        <div className={`rounded-full w-4 h-4 ${
-          isDateInFuture() 
-            ? "bg-[#010400] border-2 border-[#fffbfc]" 
-            : "bg-[#fffbfc]"
-        }`}></div>
+        <div
+          className={`rounded-full w-4 h-4 ${
+            new Date(date) > new Date()
+              ? "bg-[#010400] border-2 border-[#fffbfc]"
+              : "bg-[#fffbfc]"
+          }`}
+        ></div>
       </div>
 
       {/* Content */}
