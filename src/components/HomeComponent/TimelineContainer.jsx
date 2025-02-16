@@ -1,54 +1,30 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const TimelineContainer = ({ children }) => {
   const gradientLineRef = useRef(null);
   const containerRef = useRef(null);
 
-  useEffect(() => {
-    const updateGradient = () => {
-      if (!gradientLineRef.current || !containerRef.current) return;
-
-      const containerRect = containerRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      // Calculate how much of the container is visible
-      const visibleHeight = Math.max(0, windowHeight - containerRect.top);
-      
-      // Gradually grow the height of the gradient line
-      let newHeight = Math.min(visibleHeight, windowHeight * 0.5);
-
-      // Apply the new height
-      gradientLineRef.current.style.height = `${newHeight}px`;
-    };
-
-    window.addEventListener('scroll', updateGradient);
-    updateGradient(); // Initial call
-
-    return () => window.removeEventListener('scroll', updateGradient);
-  }, []);
-
   return (
-    <div ref={containerRef} className="relative flex flex-col gap-16 justify-start items-center mt-6 md:mt-8 w-full">
+    <div className="relative flex flex-col gap-16 justify-start items-center w-full mt-6 md:mt-8">
       {/* Base gray line */}
       <div
-        className="absolute top-2 w-[2px] h-full"
+        className="absolute top-2 w-[2px] h-full -z-10"
         style={{
-          background: 'linear-gradient(to bottom, #2c2c2c 0%, #2c2c2c 97%, transparent 100%)',
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 96%, rgba(0, 0, 0, 0) 100%)",
+          maskImage:
+            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 96%, rgba(0, 0, 0, 0) 100%)",
+          backgroundColor: "#2c2c2c",
         }}
-      />
-      
-      {/* Moving gradient line */}
-      {/* <div
-        ref={gradientLineRef}
-        className="absolute w-[2px] transition-all duration-300"
-        style={{
-          height: '0px', // Starts at 0px and grows
-          background: 'linear-gradient(to bottom, #CAFE48 0%, #57467B 100%)',
-        }}
-      /> */}
-      
+      >
+        {/* Moving gradient line */}
+        <div
+          className="fixed w-[2px] h-[50vh] bottom-[50vh] bg-[#fffbfc] transition-all duration-300"
+        />
+      </div>
+
       {children}
     </div>
   );
