@@ -7,10 +7,10 @@ const TimelineContainer = ({ children }) => {
   const containerRef = useRef(null);
 
   return (
-    <div className="relative flex flex-col gap-16 justify-start items-center w-full mt-6 md:mt-8">
+    <div className="relative flex flex-col gap-4 md:gap-16 justify-start md:items-center w-full mt-6 md:mt-8">
       {/* Base gray line */}
       <div
-        className="absolute top-2 w-[2px] h-full -z-10"
+        className="absolute top-2 left-[15px] w-[2px] h-full -z-10"
         style={{
           WebkitMaskImage:
             "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%)",

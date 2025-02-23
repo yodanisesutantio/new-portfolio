@@ -21,7 +21,8 @@ const TimelineEntry = ({
       const viewportHeight = window.innerHeight;
 
       // When entry is visible in viewport (fade in)
-      const inView = rect.top < viewportHeight * 0.7 && rect.bottom > viewportHeight * 0.4;
+      const inView =
+        rect.top < viewportHeight * 0.7 && rect.bottom > viewportHeight * 0.4;
       setIsInView(inView);
 
       // Keep opacity-100 when scrolled past
@@ -37,7 +38,7 @@ const TimelineEntry = ({
   return (
     <div
       ref={entryRef}
-      className={`relative grid grid-cols-[1fr_2.5rem_1fr] gap-5 transition-all duration-300 ${
+      className={`relative flex flex-row md:grid md:grid-cols-[1fr_2.5rem_1fr] gap-6 md:gap-5 w-full px-2 md:px-0 transition-all duration-300 ${
         isPastView
           ? "opacity-100 saturate-100" // If past the top of viewport, keep it full opacity
           : isInView
@@ -46,14 +47,14 @@ const TimelineEntry = ({
       }`}
     >
       {/* Date */}
-      <div className="flex justify-end items-stretch">
+      <div className="hidden md:flex justify-end items-stretch">
         <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
           {date}
         </h2>
       </div>
 
       {/* Dot only - no line */}
-      <div className="flex justify-center pt-2">
+      <div className="flex justify-start md:justify-center pt-2">
         <div
           className={`rounded-full w-4 h-4 ${
             new Date(date) > new Date()
@@ -64,17 +65,20 @@ const TimelineEntry = ({
       </div>
 
       {/* Content */}
-      <div className="flex flex-col gap-3">
-        <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+      <div className="flex flex-col gap-2 md:gap-3 w-full pt-[5px] md:pr-24">
+        <h2 className="flex md:hidden font-mclaren font-medium text-xl xl:text-2xl text-left text-[#fffbfc]">
+          {date}
+        </h2>
+        <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug">
           {content}
         </p>
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="pr-24 object-cover object-center h-72"
+          className="object-cover object-center my-2 h-48 md:h-72"
         />
         {additionalContent && (
-          <div className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug pt-[5px] pr-24">
+          <div className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug">
             {additionalContent}
           </div>
         )}
