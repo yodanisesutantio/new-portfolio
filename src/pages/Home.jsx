@@ -51,7 +51,7 @@ const Home = () => {
 
       {/* Animated Introduction Text */}
       <div
-        className={`mt-3 md:mt-5 lg:mt-3 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1000ms] ${
+        className={`mt-3 md:mt-5 lg:mt-3 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#aaa6a7] text-center transform transition-all duration-700 delay-[1000ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -69,7 +69,7 @@ const Home = () => {
         }`}
       >
         <button
-          className="font-nunito font-medium text-sm/snug md:text-xl/tight lg:text-lg/tight text-center cursor-pointer text-[#fffbfc]/30 w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#fffbfc]/5 duration-500"
+          className="font-nunito font-medium text-sm/snug md:text-xl/tight lg:text-lg/tight text-center cursor-pointer text-[#fffbfc]/30 w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#0e0e0e] duration-500"
           onClick={() => scrollToBottom(1500)}
         >
           Connect with me
@@ -91,7 +91,7 @@ const Home = () => {
       </h1>
 
       <p
-        className={`mt-1.5 md:mt-2 w-full xl:w-96 2xl:w-[32rem] font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[1600ms] ${
+        className={`mt-1.5 md:mt-2 w-full xl:w-96 2xl:w-[32rem] font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#aaa6a7] text-center transform transition-all duration-700 delay-[1600ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -132,7 +132,7 @@ const Home = () => {
       <h1 className={`w-full mt-12 md:mt-18 xl:mt-24 text-2xl/snug md:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[2000ms]`}>
         My Journey so far
       </h1>
-      <p className={`mt-1.5 md:mt-2 w-full xl:w-96 2xl:w-[32rem] font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[2200ms]`}>
+      <p className={`mt-1.5 md:mt-2 w-full xl:w-96 2xl:w-[32rem] font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#aaa6a7] text-center transform transition-all duration-700 delay-[2200ms]`}>
         Come along as I share the steps that brought me here, one chapter at a
         time.
       </p>
@@ -223,7 +223,7 @@ const Home = () => {
         <h1 className="text-2xl/snug md:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
           Meet me in digital space!
         </h1>
-        <p className="mt-1.5 md:mt-2 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#fffbfc]/75 text-center">
+        <p className="mt-1.5 md:mt-2 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#aaa6a7] text-center">
           Find me on my social accounts below - I&rsquo;m always happy to chat
           and share ideas.
         </p>
@@ -260,7 +260,7 @@ const Home = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-20 sm:w-14 md:w-24 h-20 sm:h-14 md:h-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-20 sm:w-14 md:w-24 h-20 sm:h-14 md:h-24 shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -284,7 +284,7 @@ const Home = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-20 sm:w-14 md:w-24 h-20 sm:h-14 md:h-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-20 sm:w-14 md:w-24 h-20 sm:h-14 md:h-24 shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
