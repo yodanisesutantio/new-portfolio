@@ -22,7 +22,7 @@ const ScrollToTopButton = () => {
   return (
     showButton && (
       <div
-        className="fixed bottom-6 right-6 flex flex-col items-center justify-center gap-2 w-14 h-14 bg-[#fffbfc] rounded-full cursor-pointer hover:h-44 transition-all duration-700 group"
+        className="fixed bottom-6 right-6 hidden md:flex flex-col items-center justify-center gap-2 w-14 h-14 bg-[#fffbfc] rounded-full cursor-pointer hover:h-44 transition-all duration-700 group"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <svg

@@ -2,15 +2,15 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from "react";
 
-const TimelineContainer = ({ children }) => {
+const TimelineContainer = ({ className, children }) => {
   const gradientLineRef = useRef(null);
   const containerRef = useRef(null);
 
   return (
-    <div className="relative flex flex-col gap-4 md:gap-16 justify-start md:items-center w-full mt-6 md:mt-8">
+    <div className={`relative flex flex-col gap-4 sm:gap-8 md:gap-16 justify-start sm:justify-center sm:items-center w-full mt-6 md:mt-8 ${className}`}>
       {/* Base gray line */}
       <div
-        className="absolute top-2 left-[15px] w-[2px] h-full -z-10"
+        className="absolute top-2 left-[15px] sm:left-auto w-[2px] h-full -z-10"
         style={{
           WebkitMaskImage:
             "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%)",

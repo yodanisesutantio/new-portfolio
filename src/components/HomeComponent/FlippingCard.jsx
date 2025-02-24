@@ -76,10 +76,10 @@ const FlippingCard = ({
         {/* Back side */}
         <div className="absolute top-0 w-full h-52 xl:h-[22rem] backface-hidden rotate-y-180 rounded-sm bg-[#57467B]">
           <div className="w-full h-full flex flex-col justify-center items-center gap-1 p-4">
-            <h2 className="font-mclaren font-bold text-lg sm:text-xl md:text-2xl text-[#CAFE48]">
+            <h2 className="font-mclaren font-bold text-lg md:text-2xl text-[#CAFE48]">
               {title}
             </h2>
-            <p className="font-nunito font-light text-sm/snug sm:text-base/snug text-[#CAFE48]/85">
+            <p className="font-nunito font-light text-sm/snug md:text-base/snug text-[#CAFE48]/85">
               {description}
             </p>
           </div>

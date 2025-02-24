@@ -38,7 +38,7 @@ const TimelineEntry = ({
   return (
     <div
       ref={entryRef}
-      className={`relative flex flex-row md:grid md:grid-cols-[1fr_2.5rem_1fr] gap-6 md:gap-5 w-full px-2 md:px-0 transition-all duration-300 ${
+      className={`relative flex flex-row sm:grid sm:grid-cols-[1fr_2.5rem_1fr] gap-6 sm:gap-5 w-full px-2 sm:px-0 transition-all duration-300 ${
         isPastView
           ? "opacity-100 saturate-100" // If past the top of viewport, keep it full opacity
           : isInView
@@ -47,14 +47,14 @@ const TimelineEntry = ({
       }`}
     >
       {/* Date */}
-      <div className="hidden md:flex justify-end items-stretch">
-        <h2 className="font-mclaren font-medium xl:text-2xl text-right text-[#fffbfc]">
+      <div className="hidden sm:flex justify-end items-stretch">
+        <h2 className="font-mclaren font-medium text-xl xl:text-2xl text-right text-[#fffbfc]">
           {date}
         </h2>
       </div>
 
       {/* Dot only - no line */}
-      <div className="flex justify-start md:justify-center pt-2">
+      <div className="flex justify-start sm:justify-center pt-2">
         <div
           className={`rounded-full w-4 h-4 ${
             new Date(date) > new Date()
@@ -66,19 +66,19 @@ const TimelineEntry = ({
 
       {/* Content */}
       <div className="flex flex-col gap-2 md:gap-3 w-full pt-[5px] md:pr-24">
-        <h2 className="flex md:hidden font-mclaren font-medium text-xl xl:text-2xl text-left text-[#fffbfc]">
+        <h2 className="flex sm:hidden font-mclaren font-medium text-xl xl:text-2xl text-left text-[#fffbfc]">
           {date}
         </h2>
-        <p className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug">
+        <p className="font-nunito font-light text-sm/snug xl:text-base/snug text-justify text-[#fffbfc]">
           {content}
         </p>
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="object-cover object-center my-2 h-48 md:h-72"
+          className="object-cover object-center my-2 sm:my-0 h-48 md:h-72"
         />
         {additionalContent && (
-          <div className="font-nunito font-light xl:text-base text-justify text-[#fffbfc] leading-snug">
+          <div className="font-nunito font-light text-sm/snug xl:text-base/snug text-justify text-[#fffbfc]">
             {additionalContent}
           </div>
         )}

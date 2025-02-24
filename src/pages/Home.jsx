@@ -42,7 +42,7 @@ const Home = () => {
   };
 
   return (
-    <section className="py-4 md:py-6 px-4 sm:px-10 lg:px-20 xl:px-32 2xl:px-44 flex flex-col grow items-center justify-center">
+    <section className="py-4 md:py-6 px-4 sm:px-10 md:px-16 lg:px-20 xl:px-32 2xl:px-44 flex flex-col grow items-center justify-center">
       <ScrollToTopButton />
 
       <h1 className="text-4xl/snug xl:text-7xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
@@ -64,19 +64,19 @@ const Home = () => {
 
       {/* Animated Buttons */}
       <div
-        className={`flex flex-col-reverse md:flex-row gap-4 md:gap-6 w-full items-center justify-center mt-6 px-4 transform transition-all duration-700 delay-[1200ms] ${
+        className={`flex flex-col-reverse sm:flex-row gap-4 md:gap-6 w-full items-center justify-center mt-6 px-4 transform transition-all duration-700 delay-[1200ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
         <button
-          className="font-nunito font-medium text-sm/snug sm:text-base/snug md:text-lg/tight text-center cursor-pointer text-[#fffbfc]/30 w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#fffbfc]/5 duration-500"
+          className="font-nunito font-medium text-sm/snug md:text-lg/tight text-center cursor-pointer text-[#fffbfc]/30 w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#fffbfc]/5 duration-500"
           onClick={() => scrollToBottom(1500)}
         >
           Connect with me
         </button>
         <Link
           to="/projects"
-          className="font-nunito font-extrabold text-sm/snug sm:text-base/snug md:text-lg/tight text-center cursor-pointer text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] w-full md:w-fit md:px-10 py-3 md:py-5 duration-500"
+          className="font-nunito font-extrabold text-sm/snug md:text-lg/tight text-center cursor-pointer text-[#010400] hover:text-[#CAFE48] bg-[#fffbfc] hover:bg-[#57467B] w-full md:w-fit md:px-10 py-3 md:py-5 duration-500"
         >
           View Projects
         </Link>
@@ -100,7 +100,7 @@ const Home = () => {
       </p>
 
       <div
-        className={`w-full mt-6 md:mt-8 flex flex-col md:grid md:grid-cols-2 gap-4 transform transition-all duration-700 delay-[1800ms] ${
+        className={`w-full mt-6 md:mt-8 flex flex-col sm:grid sm:grid-cols-2 gap-4 sm:gap-2 transform transition-all duration-700 delay-[1800ms] ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
@@ -129,15 +129,21 @@ const Home = () => {
         />
       </div>
 
-      <h1 className="w-full mt-12 xl:mt-24 text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center">
+      <h1 className={`w-full mt-12 xl:mt-24 text-2xl/snug xl:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[2000ms] ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
+        }`}>
         My Journey so far
       </h1>
-      <p className="mt-1.5 md:mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center">
+      <p className={`mt-1.5 md:mt-2 w-full lg:w-96 font-nunito font-light text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]/75 text-center transform transition-all duration-700 delay-[2200ms] ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
+        }`}>
         Come along as I share the steps that brought me here, one chapter at a
         time.
       </p>
 
-      <TimelineContainer>
+      <TimelineContainer className={`transform transition-all duration-700 delay-[2400ms] ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
+        }`}>
         <TimelineEntry
           date="July, 2002"
           content="I was born in July 2002, a curious child eager to explore the world around me."
@@ -228,7 +234,7 @@ const Home = () => {
           and share ideas.
         </p>
 
-        <div className="mt-6 sm:mt-10 md:mt-8 px-4 lg:px-60 flex flex-col md:flex-row items-center justify-center lg:justify-between gap-6 w-full">
+        <div className="mt-6 sm:mt-10 md:mt-8 px-4 lg:px-60 flex flex-col sm:flex-row items-center justify-center lg:justify-between gap-6 sm:gap-16 w-full">
           {/* Github */}
           <a
             href="https://github.com/yodanisesutantio"
@@ -236,7 +242,7 @@ const Home = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-20 md:w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -260,7 +266,7 @@ const Home = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-20 md:w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -284,7 +290,7 @@ const Home = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
+              className="w-20 md:w-24 h-full shrink-0 transform transition-all duration-700 group-hover:rotate-y-360"
               width="32"
               height="32"
               viewBox="0 0 24 24"
