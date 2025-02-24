@@ -87,11 +87,11 @@ const FlippingCard = ({
           className="absolute w-full h-full backface-hidden rotate-y-180 rounded-sm"
           style={{ backgroundColor: backgroundColor }}
         >
-          <div className="w-full h-full flex flex-col justify-center items-center gap-0 xl:gap-1 p-4">
-            <p className="font-mclaren font-light text-center text-xs sm:text-sm md:text-base" style={{ color: `${accentColor}` }}>
+          <div className="w-full h-full flex flex-col justify-center items-center gap-0 md:gap-2 xl:gap-1 p-4">
+            <p className="font-mclaren font-light text-center text-sm/snug md:text-2xl/snug lg:text-lg/snug xl:text-base/snug" style={{ color: `${accentColor}` }}>
               {year}, {category}
             </p>
-            <h2 className="font-mclaren font-bold text-center text-lg sm:text-xl md:text-2xl" style={{ color: accentColor }}>
+            <h2 className="font-mclaren font-bold text-center text-lg md:text-3xl lg:text-2xl" style={{ color: accentColor }}>
               {title}
             </h2>
           </div>

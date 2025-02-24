@@ -70,10 +70,10 @@ const Quotes = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-3 rounded-sm bg-[#fffbfc]/5 py-5 px-4 lg:px-10">
-      <h2 className="font-mclaren font-medium text-center text-[#fffbfc] text-lg/snug md:text-2xl/snug xl:text-4xl/snug">
+      <h2 className="font-mclaren font-medium text-center text-[#fffbfc] text-lg/snug md:text-3xl">
         &quot;{quote.text}&quot;
       </h2>
-      <p className="font-nunito font-light italic text-xs/snug sm:text-sm/snug md:text-base/tight text-[#fffbfc]">
+      <p className="font-nunito font-light italic text-xs/snug sm:text-sm/snug md:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#fffbfc]">
         ~ {quote.author} ~
       </p>
     </div>

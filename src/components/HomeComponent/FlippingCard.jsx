@@ -56,7 +56,7 @@ const FlippingCard = ({
       >
         {/* Front side */}
         <div
-          className="group/item flex flex-col justify-end w-full h-52 xl:h-[22rem] backface-hidden overflow-hidden bg-cover xl:bg-auto bg-center xl:bg-bottom cursor-pointer rounded-sm lg:saturate-0 lg:hover:saturate-100 duration-700 relative"
+          className="group/item flex flex-col justify-end w-full h-52 md:h-96 lg:h-72 xl:h-[22rem] backface-hidden overflow-hidden bg-cover xl:bg-auto bg-center xl:bg-bottom cursor-pointer rounded-sm xl:saturate-0 xl:hover:saturate-100 duration-700 relative"
           style={{
             backgroundImage: `url(${backgroundImage})`,
           }}
@@ -74,12 +74,12 @@ const FlippingCard = ({
         </div>
 
         {/* Back side */}
-        <div className="absolute top-0 w-full h-52 xl:h-[22rem] backface-hidden rotate-y-180 rounded-sm bg-[#57467B]">
-          <div className="w-full h-full flex flex-col justify-center items-center gap-1 p-4">
-            <h2 className="font-mclaren font-bold text-lg md:text-2xl text-[#CAFE48]">
+        <div className="absolute top-0 w-full h-52 md:h-96 lg:h-72 xl:h-[22rem] backface-hidden rotate-y-180 rounded-sm bg-[#57467B]">
+          <div className="w-full h-full flex flex-col justify-center items-center gap-1 md:gap-4 p-4 md:py-5 md:px-10 lg:px-6">
+            <h2 className="font-mclaren font-bold text-lg md:text-4xl lg:text-2xl text-[#CAFE48]">
               {title}
             </h2>
-            <p className="font-nunito font-light text-sm/snug md:text-base/snug text-[#CAFE48]/85">
+            <p className="font-nunito font-light text-sm/snug md:text-2xl/snug lg:text-lg/snug xl:text-base/snug text-[#CAFE48]/85">
               {description}
             </p>
           </div>

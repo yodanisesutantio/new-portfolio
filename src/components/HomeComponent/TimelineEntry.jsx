@@ -48,7 +48,7 @@ const TimelineEntry = ({
     >
       {/* Date */}
       <div className="hidden sm:flex justify-end items-stretch">
-        <h2 className="font-mclaren font-medium text-xl xl:text-2xl text-right text-[#fffbfc]">
+        <h2 className="font-mclaren font-medium text-xl md:text-2xl text-right text-[#fffbfc]">
           {date}
         </h2>
       </div>
@@ -65,20 +65,20 @@ const TimelineEntry = ({
       </div>
 
       {/* Content */}
-      <div className="flex flex-col gap-2 md:gap-3 w-full pt-[5px] md:pr-24">
-        <h2 className="flex sm:hidden font-mclaren font-medium text-xl xl:text-2xl text-left text-[#fffbfc]">
+      <div className="flex flex-col gap-2 md:gap-3 w-full pt-[3px] sm:pt-[5px] md:pr-14 xl:pr-24">
+        <h2 className="flex sm:hidden font-mclaren font-medium text-xl md:text-2xl text-left text-[#fffbfc]">
           {date}
         </h2>
-        <p className="font-nunito font-light text-sm/snug xl:text-base/snug text-justify text-[#fffbfc]">
+        <p className="font-nunito font-light text-sm/snug md:text-xl/tight lg:text-base/snug text-justify text-[#fffbfc]">
           {content}
         </p>
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="object-cover object-center my-2 sm:my-0 h-48 md:h-72"
+          className="object-cover object-center my-2 sm:my-0 h-48 md:h-60 xl:h-72"
         />
         {additionalContent && (
-          <div className="font-nunito font-light text-sm/snug xl:text-base/snug text-justify text-[#fffbfc]">
+          <div className="font-nunito font-light text-sm/snug md:text-xl/tight lg:text-base/snug text-justify text-[#fffbfc]">
             {additionalContent}
           </div>
         )}
