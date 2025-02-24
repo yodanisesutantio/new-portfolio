@@ -69,7 +69,7 @@ const Home = () => {
         }`}
       >
         <button
-          className="font-nunito font-medium text-sm/snug md:text-xl/tight lg:text-lg/tight text-center cursor-pointer text-[#fffbfc]/30 w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#0e0e0e] duration-500"
+          className="font-nunito font-medium text-sm/snug md:text-xl/tight lg:text-lg/tight text-center cursor-pointer text-[#444] w-full md:w-fit md:px-10 py-3 md:py-5 hover:bg-[#0e0e0e] duration-500"
           onClick={() => scrollToBottom(1500)}
         >
           Connect with me
