@@ -7,13 +7,13 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="flex justify-between items-center px-4 sm:px-10 lg:px-32 xl:px-44 2xl:px-56 py-4 lg:py-6 sticky top-0 w-full bg-[#010400] z-50 border-b border-[#fffbfc]/10">
+    <nav className="flex justify-between items-center px-4 sm:px-10 lg:px-32 xl:px-44 2xl:px-56 py-4 lg:py-6 sticky top-0 w-full bg-[#010400] z-50 border-b border-[#0e0e0e]">
       <div className="flex items-center shrink-0">
         <Link to="/">
           <img
             src="/img/yodanisesutantio_logomark.png"
             alt="Yodanis E. Sutantio | Home"
-            className="h-9 md:h-10 2xl:h-12 rounded-lg lg:hover:shadow-xl lg:hover:shadow-[#fffbfc]/15 duration-500"
+            className="h-9 md:h-10 2xl:h-12 rounded-lg lg:hover:shadow-xl lg:hover:shadow-neutral-800 duration-500"
           />
         </Link>
       </div>
@@ -25,7 +25,7 @@ const Navbar = () => {
             className={`flex flex-col font-nunito font-semibold text-sm md:text-base 2xl:text-base ${
               location.pathname === "/about"
                 ? "text-[#fffbfc]"
-                : "text-[#fffbfc]/40"
+                : "text-[#444]"
             } lg:hover:text-[#fffbfc] duration-500 group`}
           >
             About
@@ -38,7 +38,7 @@ const Navbar = () => {
             className={`flex flex-col font-nunito font-semibold text-sm md:text-base 2xl:text-base ${
               location.pathname === "/projects"
                 ? "text-[#fffbfc]"
-                : "text-[#fffbfc]/40"
+                : "text-[#444]"
             } lg:hover:text-[#fffbfc] duration-500 group`}
           >
             Projects
@@ -51,7 +51,7 @@ const Navbar = () => {
             className={`flex flex-col font-nunito font-semibold ${
               location.pathname === "/socials"
                 ? "text-[#fffbfc]"
-                : "text-[#fffbfc]/40"
+                : "text-[#444]"
             } hover:text-[#fffbfc] duration-500 group`}
           >
             Socials
@@ -64,7 +64,7 @@ const Navbar = () => {
             className={`flex flex-col font-nunito font-semibold text-sm md:text-base 2xl:text-base ${
               location.pathname === "/resume"
                 ? "text-[#fffbfc]"
-                : "text-[#fffbfc]/40"
+                : "text-[#444]"
             } lg:hover:text-[#fffbfc] duration-500 group`}
           >
             Resume

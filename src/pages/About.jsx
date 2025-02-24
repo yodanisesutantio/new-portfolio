@@ -23,7 +23,7 @@ const About = () => {
       <div className="flex-1 w-full min-h-0 flex flex-col lg:grid lg:grid-cols-3 gap-6">
         {/* Mugshot wrapper, hidden in a screen with less width than 1024px */}
         <div
-          className={`hidden lg:flex rounded bg-[#fffbfc]/5 p-4 h-full transform transition-all duration-700 delay-[100ms] ${
+          className={`hidden lg:flex rounded bg-[#0e0e0e] p-4 h-full transform transition-all duration-700 delay-[100ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}
         >
@@ -35,30 +35,30 @@ const About = () => {
         </div>
 
         <div
-          className={`rounded col-span-2 flex flex-col gap-6 justify-between overflow-y-auto h-full bg-[#fffbfc]/5 p-4 transform transition-all duration-700 delay-[200ms] ${
+          className={`rounded col-span-2 flex flex-col gap-6 justify-between overflow-y-auto h-full bg-[#0e0e0e] p-4 transform transition-all duration-700 delay-[200ms] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
           }`}
         >
           <div className="flex flex-col gap-3">
-            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#fffbfc]/85">
+            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#aaa6a7]">
               Hello! I’m Yodanis, a curious explorer of the tech world. I’m
               navigating the boundless opportunities in this field, still
               figuring out my path. Some days I feel like a curious explorer;
               other days, I’m just hitting random buttons to see what works!
             </p>
 
-            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#fffbfc]/85">
+            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#aaa6a7]">
               I’ve always been inspired by a quote from Arthur Schopenhauer:{" "}
             </p>
 
-            <p className="font-nunito font-extralight text-lg/tight sm:text-xl/tight md:text-2xl/snug 2xl:text-3xl/snug italic text-[#fffbfc]/50">
+            <p className="font-nunito font-extralight text-lg/tight sm:text-xl/tight md:text-2xl/snug 2xl:text-3xl/snug italic text-[#aaa6a7]">
               &ldquo;Talent hits a target no one else can hit; Genius hits a
               target no one else can see.&rdquo;
             </p>
           </div>
 
           <div className="flex flex-col gap-2 items-end">
-            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#fffbfc]/85">
+            <p className="font-nunito font-light text-xs sm:text-sm md:text-base 2xl:text-lg text-[#aaa6a7]">
               Here’s to aiming for targets yet unseen.
             </p>
             <img

@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <div className="w-full flex justify-center sm:justify-between items-center p-2">
-      <p className="text-xs md:text-sm 2xl:text-base font-normal font-nunito text-[#fffbfc]/40">
+      <p className="text-xs md:text-sm 2xl:text-base font-normal font-nunito text-[#444]">
         © {currentYear} Portfolio by Yodanis E. Sutantio
       </p>
 
@@ -15,7 +15,7 @@ const Footer = () => {
         <li>
           <Link
             to="/about"
-            className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
+            className="flex flex-col font-nunito font-normal text-[#444] text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
           >
             About
           </Link>
@@ -23,7 +23,7 @@ const Footer = () => {
         <li>
           <Link
             to="/projects"
-            className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
+            className="flex flex-col font-nunito font-normal text-[#444] text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
           >
             Projects
           </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
         {/* <li>
           <Link
             to="/socials"
-            className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
+            className="flex flex-col font-nunito font-normal text-[#444] text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
           >
             Socials
           </Link>
@@ -39,7 +39,7 @@ const Footer = () => {
         <li>
           <Link
             to="/resume"
-            className="flex flex-col font-nunito font-normal text-[#fffbfc]/40 text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
+            className="flex flex-col font-nunito font-normal text-[#444] text-xs md:text-sm 2xl:text-base lg:hover:text-[#fffbfc] duration-500 group"
           >
             Resume
           </Link>
