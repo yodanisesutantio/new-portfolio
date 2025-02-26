@@ -255,7 +255,7 @@ const Home = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/yodanis-e-sutantio"
+            href="https://www.linkedin.com/in/yodanisesutantio"
             className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group"
           >
             <svg
@@ -273,13 +273,13 @@ const Home = () => {
             </svg>
 
             <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">
-              /in/yodanis-e-sutantio
+              /in/yodanisesutantio
             </p>
           </a>
 
           {/* Behance */}
           <a
-            href="https://www.behance.net/yodanis-e-sutantio"
+            href="https://www.behance.net/yodanisesutantio"
             className="w-fit h-fit cursor-pointer bg-none flex flex-col items-center justify-center gap-4 group"
           >
             <svg
@@ -297,7 +297,7 @@ const Home = () => {
             </svg>
 
             <p className="font-nunito text-sm/snug sm:text-base/snug md:text-lg/tight font-normal text-[#fffbfc] whitespace-nowrap">
-              /yodanis-e-sutantio
+              /yodanisesutantio
             </p>
           </a>
         </div>
