@@ -45,7 +45,7 @@ const Projects = () => {
           title="70RAD Design Challenge"
           description="A self-driven design exploration challenging my creative boundaries through daily UI recreations and focused 10-day design projects, documenting my skill progression."
           initialDelay={1200}
-          href="https://www.figma.com/design/aPp4xCfXp8K69D5Y5FH4JQ/RAD-Design-Challenge?node-id=33-2&t=fYPInX41yKvYVsQ6-1"
+          href="https://www.behance.net/gallery/220395869/70RAD-Design-Challenge-Design-Contemplation"
         />
 
         {/* Logo SI */}
