@@ -28,7 +28,7 @@ const About = () => {
           }`}
         >
           <img
-            src="img/yodanisesutantio_mugshot.png"
+            src="img/yodanisesutantio_mugshot.webp"
             alt="Yodanis E. Sutantio | Mugshot"
             className="w-full h-full object-cover rounded-xs"
           />
@@ -62,7 +62,7 @@ const About = () => {
               Here’s to aiming for targets yet unseen.
             </p>
             <img
-              src="/img/yodanisesutantio_signature.png"
+              src="/img/yodanisesutantio_signature.webp"
               alt="Yodanis E. Sutantio | Signature"
               className="h-14 md:h-20"
             />

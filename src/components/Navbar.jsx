@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="flex items-center shrink-0">
         <Link to="/">
           <img
-            src="/img/yodanisesutantio_logomark.png"
+            src="/img/yodanisesutantio_logomark.webp"
             alt="Yodanis E. Sutantio | Home"
             className="h-9 md:h-10 2xl:h-12 rounded-lg lg:hover:shadow-xl lg:hover:shadow-neutral-800 duration-500"
           />
@@ -23,9 +23,7 @@ const Navbar = () => {
           <Link
             to="/about"
             className={`flex flex-col font-nunito font-semibold text-sm md:text-base 2xl:text-base ${
-              location.pathname === "/about"
-                ? "text-[#fffbfc]"
-                : "text-[#444]"
+              location.pathname === "/about" ? "text-[#fffbfc]" : "text-[#444]"
             } lg:hover:text-[#fffbfc] duration-500 group`}
           >
             About
@@ -62,9 +60,7 @@ const Navbar = () => {
           <Link
             to="/resume"
             className={`flex flex-col font-nunito font-semibold text-sm md:text-base 2xl:text-base ${
-              location.pathname === "/resume"
-                ? "text-[#fffbfc]"
-                : "text-[#444]"
+              location.pathname === "/resume" ? "text-[#fffbfc]" : "text-[#444]"
             } lg:hover:text-[#fffbfc] duration-500 group`}
           >
             Resume

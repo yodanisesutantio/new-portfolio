@@ -106,7 +106,7 @@ const Home = () => {
       >
         {/* UI Design Card */}
         <FlippingCard
-          backgroundImage="/img/si-logo-thumb.png"
+          backgroundImage="/img/si-logo-thumb.webp"
           title="User Interface Design"
           description="Why only UI? While I admire the world of UX Design, I
                 haven&rsquo;t yet had the opportunity to practice it or work on
@@ -118,7 +118,7 @@ const Home = () => {
 
         {/* Web Development Card */}
         <FlippingCard
-          backgroundImage="/img/webdev.png"
+          backgroundImage="/img/webdev.webp"
           title="Web Development"
           description="It&rsquo;s a field that excites me because the possibilities
                 feel endless. I&rsquo;ve recently started exploring frameworks
@@ -129,10 +129,14 @@ const Home = () => {
         />
       </div>
 
-      <h1 className={`w-full mt-12 md:mt-18 xl:mt-24 text-2xl/snug md:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[2000ms]`}>
+      <h1
+        className={`w-full mt-12 md:mt-18 xl:mt-24 text-2xl/snug md:text-4xl/snug font-mclaren font-bold text-[#fffbfc] text-center transform transition-all duration-700 delay-[2000ms]`}
+      >
         My Journey so far
       </h1>
-      <p className={`mt-1.5 md:mt-2 w-full xl:w-96 2xl:w-[32rem] font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#aaa6a7] text-center transform transition-all duration-700 delay-[2200ms]`}>
+      <p
+        className={`mt-1.5 md:mt-2 w-full xl:w-96 2xl:w-[32rem] font-nunito font-light text-xs/snug sm:text-sm/snug md:text-xl/tight lg:text-lg/tight xl:text-base/tight 2xl:text-lg/tight text-[#aaa6a7] text-center transform transition-all duration-700 delay-[2200ms]`}
+      >
         Come along as I share the steps that brought me here, one chapter at a
         time.
       </p>
@@ -141,7 +145,7 @@ const Home = () => {
         <TimelineEntry
           date="July, 2002"
           content="I was born in July 2002, a curious child eager to explore the world around me."
-          imageSrc="/img/july-2002.png"
+          imageSrc="/img/july-2002.webp"
           imageAlt="a recreated image of the moment when I was born, July 2002"
         />
 
@@ -150,7 +154,7 @@ const Home = () => {
           content="I moved from Surabaya to the neighboring town of Sidoarjo. I
               didn’t fully understand my feelings about the change, but I
               learned to adapt and make do with my new surroundings."
-          imageSrc="/img/january-2007.png"
+          imageSrc="/img/january-2007.webp"
           imageAlt="a recreated image of the day I was moved to a new house, January 2007"
         />
 
@@ -159,7 +163,7 @@ const Home = () => {
           content="My high school years began in July 2017. By my second year, I
               focused on my Multimedia major, sharpening my video production
               skills and discovering my passion for UI/UX Design."
-          imageSrc="/img/july-2017.png"
+          imageSrc="/img/july-2017.webp"
           imageAlt="a recreation image of myself alone in a computer laboratory learning more about my major"
         />
 
@@ -167,7 +171,7 @@ const Home = () => {
           date="September, 2020"
           content="Despite the global pandemic, September 2020 marked the start of my
               college journey as an Information Systems student."
-          imageSrc="/img/september-2020.png"
+          imageSrc="/img/september-2020.webp"
           imageAlt="a recreation image of my bedroom with my laptop currently in an online meeting class in the midst of 2020 pandemic"
           additionalContent="I honed my UI/UX knowledge and, along the way, stumbled upon Web
               Development—a discovery that opened up exciting new possibilities."
@@ -178,7 +182,7 @@ const Home = () => {
           content="This marked the end of my educational journey with the submission
               of my final assignment—a web-based app for a driving school using
               the incremental model."
-          imageSrc="/img/december-2024.png"
+          imageSrc="/img/december-2024.webp"
           imageAlt="a recreation image of me completing my final assignment of college"
           additionalContent={
             <>
@@ -201,7 +205,7 @@ const Home = () => {
               dream of working abroad—perhaps Germany? The chance to grow my
               skills while exploring new cultures excites me, and I’m ready for
               whatever comes next."
-          imageSrc="/img/today.png"
+          imageSrc="/img/today.webp"
           imageAlt="a recreation image of what I do right now"
         />
 
@@ -210,7 +214,7 @@ const Home = () => {
           content="I’ll be attending my graduation and officially earning my
               bachelor’s degree. It’s a proud milestone that closes one chapter
               while opening doors to new adventures."
-          imageSrc="/img/may-2025.png"
+          imageSrc="/img/may-2025.webp"
           imageAlt="a recreation image of my graduation day"
         />
       </TimelineContainer>

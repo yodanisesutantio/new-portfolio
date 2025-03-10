@@ -28,7 +28,7 @@ const Projects = () => {
       >
         {/* Kemudi */}
         <FlippingCard
-          backgroundImage="/img/kemudi-thumb.png"
+          backgroundImage="/img/kemudi-thumb.webp"
           year="2024"
           category="Web Development"
           title="KEMUDI"
@@ -39,7 +39,7 @@ const Projects = () => {
 
         {/* 70 RAD */}
         <FlippingCard
-          backgroundImage="/img/70rad-thumb.png"
+          backgroundImage="/img/70rad-thumb.webp"
           year="2024"
           category="UI Design"
           title="70RAD Design Challenge"
@@ -50,7 +50,7 @@ const Projects = () => {
 
         {/* Logo SI */}
         <FlippingCard
-          backgroundImage="/img/si-logo-thumb.png"
+          backgroundImage="/img/si-logo-thumb.webp"
           year="2023"
           category="Logo Design"
           title="Information Systems of ITATS"
@@ -61,7 +61,7 @@ const Projects = () => {
 
         {/* Archdaily UX Case Study */}
         <FlippingCard
-          backgroundImage="/img/archdaily-thumb.png"
+          backgroundImage="/img/archdaily-thumb.webp"
           year="2023"
           category="Case Study"
           title="Archdaily UX Case Study"
